@@ -27,4 +27,6 @@ Wordpress template for Salasar.
 
 You have to download [Wordpress](https://wordpress.org/download/) and install it on you server.
 
+Woocommerce : [Langage Pack](!https://translate.wordpress.org/projects/wp-plugins/woocommerce/language-packs)
+
 
