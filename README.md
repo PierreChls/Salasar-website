@@ -16,7 +16,7 @@ Wordpress template for Salasar.
 
 ### Clone the project
 
-    git clone https://github.com/PierreChls/Bec3-website.git
+    git clone https://github.com/PierreChls/Salasar-website.git
     
 ### Add theme to your WordPress
 
