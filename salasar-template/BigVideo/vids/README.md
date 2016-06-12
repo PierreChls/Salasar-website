@@ -1,0 +1,1 @@
+Put your template video here (mp4/ogv/ogg/webm)
