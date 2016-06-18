@@ -84,7 +84,7 @@
 
         <div class="footer-container">
             <footer class="wrapper">
-            	<p>Wine Grower © 2016</p>
+            	<p><?php bloginfo('name'); ?> © 2016</p>
             	<p><a href="<?php echo get_site_url(); ?>/conditions-generales-de-vente/">CGV</a> | <a href="<?php echo get_site_url(); ?>/mentions-legales/">Mentions Légales</a></p>
             	<p>L'abus d'alcool est dangereux pour la santé, à consommer avec modération.</p>
             	<br/>
