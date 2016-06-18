@@ -32,13 +32,13 @@
     <head>
 	        <meta charset="utf-8">
 	        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-	        <title>Wine Grower</title>
-	        <meta name="description" content="Wine Grower">
-	        <meta name="author" content="Wine Grower" />
+	        <title><?php bloginfo('name'); ?></title>
+	        <meta name="description" content="<?php bloginfo('description'); ?>">
+	        <meta name="author" content="<?php bloginfo('name'); ?>" />
 	        <meta property="og:url" content="<?php echo get_site_url(); ?>/" /> 
-			<meta property="og:image" content="<?php echo get_site_url(); ?>/images/og-image.png" />
-			<meta property="og:site_name" content="Wine Grower" />
-			<meta property="og:description" content="Wine Grower" />
+			<meta property="og:image" content="<?php bloginfo('template_directory'); ?>/images/og-image.png" />
+			<meta property="og:site_name" content="<?php bloginfo('name'); ?>" />
+			<meta property="og:description" content="<?php bloginfo('description'); ?>" />
 	        
 	        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0"/>
 		    <link rel="shortcut icon" href="<?php bloginfo('template_directory'); ?>/images/favicon.ico" type="image/x-icon">
