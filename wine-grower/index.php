@@ -32,13 +32,13 @@
     <head>
 	        <meta charset="utf-8">
 	        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-	        <title>Salasar</title>
-	        <meta name="description" content="Salasar">
-	        <meta name="author" content="Salasar" />
+	        <title>Wine Grower</title>
+	        <meta name="description" content="Wine Grower">
+	        <meta name="author" content="Wine Grower" />
 	        <meta property="og:url" content="<?php echo get_site_url(); ?>/" /> 
 			<meta property="og:image" content="<?php echo get_site_url(); ?>/images/og-image.png" />
-			<meta property="og:site_name" content="Salasar" />
-			<meta property="og:description" content="Salasar" />
+			<meta property="og:site_name" content="Wine Grower" />
+			<meta property="og:description" content="Wine Grower" />
 	        
 	        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0"/>
 		    <link rel="shortcut icon" href="<?php bloginfo('template_directory'); ?>/images/favicon.ico" type="image/x-icon">
@@ -74,10 +74,10 @@
 				
 					$email = addslashes($_POST['email_c']);
 					$nom = addslashes($_POST['nom_c']);
-					$sujet = "Prise de contact - Via formulaire de contact du site Salasar";
+					$sujet = "Prise de contact - Via formulaire de contact du site Wine Grower";
 					$ipsender = $_SERVER['REMOTE_ADDR'];
 			    
-					$mailDestinataire="contact@salasar.fr";
+					$mailDestinataire="contact@winegrower.fr";
 				
 					if (!preg_match("#^[a-z0-9._-]+@(hotmail|live|msn).[a-z]{2,4}$#", $email)) // On filtre les serveurs qui rencontrent des bogues.
 					{
@@ -94,7 +94,7 @@
 							$message_txt .= "----------------------------------- \r\n";
 							$message_txt .= "Message : ".$_POST['message_c']."\r\n";
 					
-							$message_html = "<html><head><link rel='stylesheet' href='http://www.pierre-charles.com/BrainFactory/Salasar/wp-content/themes/salasar/css/style.css'></head><style>.im{color:#606161 !important;}span.im {color: red !important;}</style><body style='color:#606161'><div style='background-color:#f5f5f5;margin:0;padding:70px 0 70px 0;width:100%'><img src='http://www.pierre-charles.com/BrainFactory/Salasar/wp-content/themes/salasar/images/logoSalasar.png' alt='Salasar' style='border:none;display:block; margin:auto; margin-bottom:70px;font-size:14px;font-weight:bold;min-height:auto;line-height:100%;outline:none;text-decoration:none;text-transform:capitalize'><h1 style='color:#ffffff;background-color:#a18e38;display:block;font-family:&quot;Helvetica Neue&quot;,Helvetica,Roboto,Arial,sans-serif;font-size:20px;font-weight:300;line-height:150%;margin:0;padding:36px 48px;text-align:left'>Vous avez reçu un mail depuis le formulaire contact du site Salasar de la part de <strong>".$nom."</strong>.</h1><h2 style='color:#a18e38;display:block;padding: 36px 48px;font-family:Helvetica,Roboto,Arial,sans-serif;font-size:18px;font-weight:bold;line-height:130%;margin:16px 0 8px;text-align:left'>Détails de l'expéditeur: </h2><h4 style='padding: 0px 48px;'><strong>Nom : </strong>".$nom."<br/><strong>Adresse email : </strong><a style='color:#606161' href='".$email."' target='_blank'>".$email."</a><br /><strong>IP de l'auteur : </strong>".$ipsender."<br /></h4><p style='margin-top:20px; padding: 0px 48px; text-align:justify;'>".nl2br(htmlspecialchars($_POST['message_c']))."</p><p style='padding: 48px 0 0 0px; border: 0; color: #c7bb88;font-family: Arial;font-size: 12px;line-height: 125%;text-align: center;'>Maison Salasar</p></div></body></html>";
+							$message_html = "<html><head><link rel='stylesheet' href='http://www.your-website.com/wp-content/themes/wine-grower/css/style.css'></head><style>.im{color:#606161 !important;}span.im {color: red !important;}</style><body style='color:#606161'><div style='background-color:#f5f5f5;margin:0;padding:70px 0 70px 0;width:100%'><img src='http://www.your-website.com/wp-content/themes/wine-grower/images/logo.png' alt='Wine Grower' style='border:none;display:block; margin:auto; margin-bottom:70px;font-size:14px;font-weight:bold;min-height:auto;line-height:100%;outline:none;text-decoration:none;text-transform:capitalize'><h1 style='color:#ffffff;background-color:#a18e38;display:block;font-family:&quot;Helvetica Neue&quot;,Helvetica,Roboto,Arial,sans-serif;font-size:20px;font-weight:300;line-height:150%;margin:0;padding:36px 48px;text-align:left'>Vous avez reçu un mail depuis le formulaire contact du site Wine Grower de la part de <strong>".$nom."</strong>.</h1><h2 style='color:#a18e38;display:block;padding: 36px 48px;font-family:Helvetica,Roboto,Arial,sans-serif;font-size:18px;font-weight:bold;line-height:130%;margin:16px 0 8px;text-align:left'>Détails de l'expéditeur: </h2><h4 style='padding: 0px 48px;'><strong>Nom : </strong>".$nom."<br/><strong>Adresse email : </strong><a style='color:#606161' href='".$email."' target='_blank'>".$email."</a><br /><strong>IP de l'auteur : </strong>".$ipsender."<br /></h4><p style='margin-top:20px; padding: 0px 48px; text-align:justify;'>".nl2br(htmlspecialchars($_POST['message_c']))."</p><p style='padding: 48px 0 0 0px; border: 0; color: #c7bb88;font-family: Arial;font-size: 12px;line-height: 125%;text-align: center;'>Wine Grower</p></div></body></html>";
 					//==========
 					  
 					//=====Création de la boundary
@@ -553,9 +553,11 @@ td.chiffre{
                     </section>
                     <section class="col2" style="float:right;">
                     	<h2 style="text-align:right;">Coordonnées</h2>
-                        <p style="text-align:right;">Maison SALASAR<br>
-						11260 Campagne Sur Aude<br>
-						Mail : <a href="mailto:contact@salasar.fr" style="color:#38393a">contact@salasar.fr</a><br>
+                        <p style="text-align:right;">Wine Grower<br>
+                        00 Rue du Wine Grower
+						00 000 Code Postal<br>
+						FRANCE
+						Mail : <a href="mailto:contact@winegrower.fr" style="color:#38393a">contact@winegrower.fr</a><br>
 						Tél : <a href="tel:+33468200462" style="color:#38393a">04 68 20 04 62</a>
 						<br clear="all"></p>
                     </section>

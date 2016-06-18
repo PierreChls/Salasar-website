@@ -6,13 +6,13 @@
     <head>
 	        <meta charset="utf-8">
 	        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-	        <title>Salasar</title>
-	        <meta name="description" content="Salasar">
-	        <meta name="author" content="Salasar" />
+	        <title>Wine Grower</title>
+	        <meta name="description" content="Wine Grower">
+	        <meta name="author" content="Wine Grower" />
 	        <meta property="og:url" content="<?php echo get_site_url(); ?>/" /> 
 			<meta property="og:image" content="<?php echo get_site_url(); ?>/images/og-image.png" />
-			<meta property="og:site_name" content="Salasar" />
-			<meta property="og:description" content="Salasar" />
+			<meta property="og:site_name" content="Wine Grower" />
+			<meta property="og:description" content="Wine Grower" />
 			
 	        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0"/>
 		    <link rel="shortcut icon" href="<?php bloginfo('template_directory'); ?>/images/favicon.ico" type="image/x-icon">
