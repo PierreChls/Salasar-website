@@ -96,7 +96,7 @@ a {
 	height: 260px;
 	width: 300px;
 	margin: 2.5em auto;
-	background: url("../images/logoSalasar.png") left top no-repeat;
+	background: url("../images/logo.png") left top no-repeat;
 }
 .header-container .title a span {
 	display: none;
