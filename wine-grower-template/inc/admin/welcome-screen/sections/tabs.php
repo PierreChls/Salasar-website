@@ -1,7 +1,7 @@
 <h2 class="nav-tab-wrapper">
-	<a href="#getting_started" class="nav-tab nav-tab-active"><?php _e( 'Getting Started', 'storefront' ); ?></a>
-	<a href="#add_ons" class="nav-tab"><?php _e( 'Enhance Storefront', 'storefront' ); ?></a>
-	<a href="#child_themes" class="nav-tab"><?php _e( 'Storefront Child Themes', 'storefront' ); ?></a>
+	<a href="#getting_started" class="nav-tab nav-tab-active"><?php _e( 'Getting Started', 'winegrower' ); ?></a>
+	<a href="#add_ons" class="nav-tab"><?php _e( 'Enhance winegrower', 'winegrower' ); ?></a>
+	<a href="#child_themes" class="nav-tab"><?php _e( 'winegrower Child Themes', 'winegrower' ); ?></a>
 </h2>
 
 <script>

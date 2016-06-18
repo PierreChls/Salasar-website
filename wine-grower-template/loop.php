@@ -5,10 +5,10 @@
  * Included on pages like index.php, archive.php and search.php to display a loop of posts
  * Learn more: http://codex.wordpress.org/The_Loop
  *
- * @package storefront
+ * @package winegrower
  */
 
-do_action( 'storefront_loop_before' );
+do_action( 'winegrower_loop_before' );
 
 while ( have_posts() ) : the_post();
 
@@ -21,6 +21,6 @@ while ( have_posts() ) : the_post();
 endwhile;
 
 /**
- * @hooked storefront_paging_nav - 10
+ * @hooked winegrower_paging_nav - 10
  */
-do_action( 'storefront_loop_after' );
+do_action( 'winegrower_loop_after' );

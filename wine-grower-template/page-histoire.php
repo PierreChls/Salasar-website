@@ -7,7 +7,7 @@
  * and that other 'pages' on your WordPress site will use a
  * different template.
  *
- * @package storefront
+ * @package winegrower
  */
 
 get_header(); ?>
@@ -107,7 +107,7 @@ get_header(); ?>
 
 				<?php
 				/**
-				 * @hooked storefront_display_comments - 10
+				 * @hooked winegrower_display_comments - 10
 				 */
 				?>
 

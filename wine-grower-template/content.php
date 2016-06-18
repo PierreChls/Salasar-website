@@ -1,6 +1,6 @@
 <?php
 /**
- * @package storefront
+ * @package winegrower
  */
 ?>
 
@@ -8,11 +8,11 @@
 
 	<?php
 	/**
- 	 * @hooked storefront_post_header() - 10
- 	 * @hooked storefront_post_meta() - 20
- 	 * @hooked storefront_post_content() - 30
+ 	 * @hooked winegrower_post_header() - 10
+ 	 * @hooked winegrower_post_meta() - 20
+ 	 * @hooked winegrower_post_content() - 30
 	 */
-	do_action( 'storefront_loop_post' );
+	do_action( 'winegrower_loop_post' );
 	?>
 
 </article><!-- #post-## -->

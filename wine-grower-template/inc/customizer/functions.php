@@ -1,8 +1,8 @@
 <?php
 /**
- * storefront Theme Customizer functions
+ * winegrower Theme Customizer functions
  *
- * @package storefront
+ * @package winegrower
  */
 
 /**
@@ -10,9 +10,9 @@
  *
  * @since  1.0.0
  */
-if ( ! function_exists( 'storefront_customize_preview_js' ) ) {
-	function storefront_customize_preview_js() {
-		wp_enqueue_script( 'storefront_customizer', get_template_directory_uri() . '/inc/customizer/js/customizer.min.js', array( 'customize-preview' ), '1.15', true );
+if ( ! function_exists( 'winegrower_customize_preview_js' ) ) {
+	function winegrower_customize_preview_js() {
+		wp_enqueue_script( 'winegrower_customizer', get_template_directory_uri() . '/inc/customizer/js/customizer.min.js', array( 'customize-preview' ), '1.15', true );
 	}
 }
 
@@ -24,8 +24,8 @@ if ( ! function_exists( 'storefront_customize_preview_js' ) ) {
  *
  * @since 1.0.0
  */
-if ( ! function_exists( 'storefront_sanitize_hex_color' ) ) {
-	function storefront_sanitize_hex_color( $color ) {
+if ( ! function_exists( 'winegrower_sanitize_hex_color' ) ) {
+	function winegrower_sanitize_hex_color( $color ) {
 		if ( '' === $color ) {
 			return '';
         }
@@ -45,8 +45,8 @@ if ( ! function_exists( 'storefront_sanitize_hex_color' ) ) {
  *
  * @since  1.3.0
  */
-if ( ! function_exists( 'storefront_sanitize_choices' ) ) {
-    function storefront_sanitize_choices( $input, $setting ) {
+if ( ! function_exists( 'winegrower_sanitize_choices' ) ) {
+    function winegrower_sanitize_choices( $input, $setting ) {
         global $wp_customize;
 
         $control = $wp_customize->get_control( $setting->id );
@@ -66,8 +66,8 @@ if ( ! function_exists( 'storefront_sanitize_choices' ) ) {
  *
  * @since 1.0.3
  */
-if ( ! function_exists( 'storefront_sanitize_layout' ) ) {
-    function storefront_sanitize_layout( $input ) {
+if ( ! function_exists( 'winegrower_sanitize_layout' ) ) {
+    function winegrower_sanitize_layout( $input ) {
         $valid = array(
             'right' => 'Right',
             'left'  => 'Left',
@@ -88,8 +88,8 @@ if ( ! function_exists( 'storefront_sanitize_layout' ) ) {
  * @return string[]          modified body classes
  * @since  1.0.0
  */
-function storefront_layout_class( $classes ) {
-	$layout = get_theme_mod( 'storefront_layout' );
+function winegrower_layout_class( $classes ) {
+	$layout = get_theme_mod( 'winegrower_layout' );
 
 	if ( '' == $layout ) {
 		$layout = 'right';
@@ -108,7 +108,7 @@ function storefront_layout_class( $classes ) {
  * @return string        brightened/darkened hex color
  * @since  1.0.0
  */
-function storefront_adjust_color_brightness( $hex, $steps ) {
+function winegrower_adjust_color_brightness( $hex, $steps ) {
     // Steps should be between -255 and 255. Negative = darker, positive = lighter
     $steps  = max( -255, min( 255, $steps ) );
 

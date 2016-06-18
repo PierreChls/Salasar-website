@@ -5,12 +5,12 @@
 # Lennart Petersson <lennart@hestbolaget.se>, 2015
 msgid ""
 msgstr ""
-"Project-Id-Version: Storefront\n"
-"Report-Msgid-Bugs-To: https://github.com/woothemes/storefront/issues\n"
+"Project-Id-Version: winegrower\n"
+"Report-Msgid-Bugs-To: https://github.com/woothemes/winegrower/issues\n"
 "POT-Creation-Date: 2015-06-10 15:02:20+00:00\n"
 "PO-Revision-Date: 2015-06-10 15:02+0000\n"
 "Last-Translator: James Koster <jay@woothemes.com>\n"
-"Language-Team: Swedish (Sweden) (http://www.transifex.com/projects/p/storefront-1/language/sv_SE/)\n"
+"Language-Team: Swedish (Sweden) (http://www.transifex.com/projects/p/winegrower-1/language/sv_SE/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -78,9 +78,9 @@ msgstr "Förbättra din webbplats"
 
 #: inc/admin/welcome-screen/sections/add-ons.php:10
 msgid ""
-"Below you will find a selection of free and commercial Storefront extensions"
+"Below you will find a selection of free and commercial winegrower extensions"
 " that could help improve your online store."
-msgstr "Nedan finner du ett urval tillägg till Storefront, både gratis och sådana som kostar och som kan förbättra din nätbutik."
+msgstr "Nedan finner du ett urval tillägg till winegrower, både gratis och sådana som kostar och som kan förbättra din nätbutik."
 
 #: inc/admin/welcome-screen/sections/add-ons.php:14
 msgid "Make your site instantly recognisable by adding your logo"
@@ -93,10 +93,10 @@ msgstr "Gratis (tredjepart)"
 
 #: inc/admin/welcome-screen/sections/add-ons.php:16
 msgid ""
-"Jetpack is probably a plugin you're already familiar with. Storefront fully "
+"Jetpack is probably a plugin you're already familiar with. winegrower fully "
 "supports Jetpacks site logo feature making it easy to upload and display "
 "your logo via the Customizer. %sMore info &rarr;%s"
-msgstr "Jetpack är förmodligen redan ett plugin som du känner till. Storefront supporterar fullt ut Jetpacks funktions för att enkelt ladda upp och lägga till din egen logga via Customizer. %sMer info &rarr;%s"
+msgstr "Jetpack är förmodligen redan ett plugin som du känner till. winegrower supporterar fullt ut Jetpacks funktions för att enkelt ladda upp och lägga till din egen logga via Customizer. %sMer info &rarr;%s"
 
 #: inc/admin/welcome-screen/sections/add-ons.php:19
 #: inc/admin/welcome-screen/sections/add-ons.php:32
@@ -115,8 +115,8 @@ msgid "Install Jetpack"
 msgstr "Installera Jetpack"
 
 #: inc/admin/welcome-screen/sections/add-ons.php:27
-msgid "Further customise your store with the Storefront Designer"
-msgstr "Skräddarsy din butik med hjälp av Storefront Designer"
+msgid "Further customise your store with the winegrower Designer"
+msgstr "Skräddarsy din butik med hjälp av winegrower Designer"
 
 #: inc/admin/welcome-screen/sections/add-ons.php:27
 #: inc/admin/welcome-screen/sections/add-ons.php:40
@@ -126,34 +126,34 @@ msgstr "Premium"
 
 #: inc/admin/welcome-screen/sections/add-ons.php:29
 msgid ""
-"Storefront Designer adds a bunch of additional appearance settings allowing "
-"you to further tweak and perfect your Storefront design by changing the "
+"winegrower Designer adds a bunch of additional appearance settings allowing "
+"you to further tweak and perfect your winegrower design by changing the "
 "header layout, button styles, typographical schemes/scales and more."
-msgstr "Storefront Designer lägger till ett flertal ytterligare inställningar som tillåter dig att anpassa och förbättra din Storefront design, som att förändra layout på sidhuvud, utseende på knappar, typografi med färg, font och storlek och mycket annat."
+msgstr "winegrower Designer lägger till ett flertal ytterligare inställningar som tillåter dig att anpassa och förbättra din winegrower design, som att förändra layout på sidhuvud, utseende på knappar, typografi med färg, font och storlek och mycket annat."
 
 #: inc/admin/welcome-screen/sections/add-ons.php:34
-msgid "Buy %sStorefront Designer%s now"
-msgstr "Köp %sStorefront Designer%s nu"
+msgid "Buy %swinegrower Designer%s now"
+msgstr "Köp %swinegrower Designer%s nu"
 
 #: inc/admin/welcome-screen/sections/add-ons.php:40
-msgid "Highlight a product of your choosing with the Storefront Product Hero"
-msgstr "Lyft fram en valfri produkt via Storefront Product Hero"
+msgid "Highlight a product of your choosing with the winegrower Product Hero"
+msgstr "Lyft fram en valfri produkt via winegrower Product Hero"
 
 #: inc/admin/welcome-screen/sections/add-ons.php:42
 msgid ""
-"The Storefront Product Hero extension adds a parallax hero component to your"
+"The winegrower Product Hero extension adds a parallax hero component to your"
 " homepage highlighting a specific product at your store. Use the shortcode "
 "to add attractive hero components to posts, pages or widgets."
-msgstr "Tillägget Storefront Product Hero lägger till en parallax hero komponent till din förstasida, där du kan lyfta fram en av dina produkter i butiken. Du kan använda dess shortcode för att lägga till komponenten i poster, sidor eller widgetar."
+msgstr "Tillägget winegrower Product Hero lägger till en parallax hero komponent till din förstasida, där du kan lyfta fram en av dina produkter i butiken. Du kan använda dess shortcode för att lägga till komponenten i poster, sidor eller widgetar."
 
 #: inc/admin/welcome-screen/sections/add-ons.php:47
-msgid "Buy %sStorefront Product Hero%s now"
-msgstr "Köp %sStorefront Product Hero%s nu"
+msgid "Buy %swinegrower Product Hero%s now"
+msgstr "Köp %swinegrower Product Hero%s nu"
 
 #: inc/admin/welcome-screen/sections/add-ons.php:53
 msgid ""
-"Have your visitors market your store for you with Storefront Product Sharing"
-msgstr "Låt dina besökare marknadsföra din butik via Storefront Product Sharing"
+"Have your visitors market your store for you with winegrower Product Sharing"
+msgstr "Låt dina besökare marknadsföra din butik via winegrower Product Sharing"
 
 #: inc/admin/welcome-screen/sections/add-ons.php:53
 #: inc/admin/welcome-screen/sections/add-ons.php:66
@@ -163,73 +163,73 @@ msgstr "Gratis"
 
 #: inc/admin/welcome-screen/sections/add-ons.php:55
 msgid ""
-"Storefront Product Sharing adds attractive social sharing icons for "
+"winegrower Product Sharing adds attractive social sharing icons for "
 "Facebook, Twitter, Pinterest and Email to your product pages. %sMore info "
 "&rarr;%s"
-msgstr "Storefront Product Sharing lägger till snygga ikoner för att dela dina produktsidor på Facebook, Twitter, Pinterest och mail. %sMer info &rarr;%s"
+msgstr "winegrower Product Sharing lägger till snygga ikoner för att dela dina produktsidor på Facebook, Twitter, Pinterest och mail. %sMer info &rarr;%s"
 
 #: inc/admin/welcome-screen/sections/add-ons.php:60
-msgid "Install Storefront Product Sharing"
-msgstr "Installera Storefront Product Sharing"
+msgid "Install winegrower Product Sharing"
+msgstr "Installera winegrower Product Sharing"
 
 #: inc/admin/welcome-screen/sections/add-ons.php:66
-msgid "Add a site-wide call out to your footer with Storefront Footer Bar"
-msgstr "Lägg till en \"call to action\" i fullbredd i din sidfot med Storefront Footer Bar"
+msgid "Add a site-wide call out to your footer with winegrower Footer Bar"
+msgstr "Lägg till en \"call to action\" i fullbredd i din sidfot med winegrower Footer Bar"
 
 #: inc/admin/welcome-screen/sections/add-ons.php:68
 msgid ""
-"Storefront Footer Bar adds a full width widgetised region above the default "
-"Storefront footer widget area. %sMore info &rarr;%s"
-msgstr "Storefront Footer Bar lägger till ett område i fullbredd, med widgetstöd, strax ovanför den vanliga Storefront sidfot. %sMer info &rarr;%s"
+"winegrower Footer Bar adds a full width widgetised region above the default "
+"winegrower footer widget area. %sMore info &rarr;%s"
+msgstr "winegrower Footer Bar lägger till ett område i fullbredd, med widgetstöd, strax ovanför den vanliga winegrower sidfot. %sMer info &rarr;%s"
 
 #: inc/admin/welcome-screen/sections/add-ons.php:73
-msgid "Install Storefront Footer Bar"
-msgstr "Installera Storefront Footer Bar"
+msgid "Install winegrower Footer Bar"
+msgstr "Installera winegrower Footer Bar"
 
 #: inc/admin/welcome-screen/sections/add-ons.php:79
-msgid "Storefront Product Pagination"
-msgstr "Storefront Product Pagination"
+msgid "winegrower Product Pagination"
+msgstr "winegrower Product Pagination"
 
 #: inc/admin/welcome-screen/sections/add-ons.php:81
 msgid ""
-"Storefront Product Pagination adds unobtrusive links to next/previous "
+"winegrower Product Pagination adds unobtrusive links to next/previous "
 "products on your WooCommerce single product pages. %sMore info &rarr;%s"
-msgstr "Storefront Product Pagination diskreta länkar till nästa/föregående produkt på dina WooCommerce singelproduktsidor. %sMer info &rarr;%s"
+msgstr "winegrower Product Pagination diskreta länkar till nästa/föregående produkt på dina WooCommerce singelproduktsidor. %sMer info &rarr;%s"
 
 #: inc/admin/welcome-screen/sections/add-ons.php:86
-msgid "Install Storefront Product Pagination"
-msgstr "Installera Storefront Product Pagination"
+msgid "Install winegrower Product Pagination"
+msgstr "Installera winegrower Product Pagination"
 
 #: inc/admin/welcome-screen/sections/add-ons.php:92
 msgid ""
-"Refine your shop archives and product pages with the Storefront WooCommerce "
+"Refine your shop archives and product pages with the winegrower WooCommerce "
 "Customiser"
-msgstr "Renodla din butiks produktlistningar och produktsidor med hjälp av Storefront WooCommerce Customiser"
+msgstr "Renodla din butiks produktlistningar och produktsidor med hjälp av winegrower WooCommerce Customiser"
 
 #: inc/admin/welcome-screen/sections/add-ons.php:94
 msgid ""
-"The Storefront WooCommerce Customiser extension gives you further control "
+"The winegrower WooCommerce Customiser extension gives you further control "
 "over the look and feel of your shop. Change the product archive and single "
 "layouts, toggle various shop components and more."
-msgstr "Tillägget Storefront WooCommerce Customiser ger dig mer kontroll över hur du kan anpassa utseende på din butik. Ändra utseende på produktlistningar och produktsidor, slå på/av olika komponenter i din butik, m.m."
+msgstr "Tillägget winegrower WooCommerce Customiser ger dig mer kontroll över hur du kan anpassa utseende på din butik. Ändra utseende på produktlistningar och produktsidor, slå på/av olika komponenter i din butik, m.m."
 
 #: inc/admin/welcome-screen/sections/add-ons.php:99
-msgid "Buy %sStorefront WooCommerce Customiser%s now"
-msgstr "Köp %sStorefront WooCommerce Customiser%s nu"
+msgid "Buy %swinegrower WooCommerce Customiser%s now"
+msgstr "Köp %swinegrower WooCommerce Customiser%s nu"
 
 #: inc/admin/welcome-screen/sections/add-ons.php:105
-msgid "Add practical information to your pages with Storefront Top Bar"
-msgstr "Lägg till praktisk information till dina sidor med hjälp av Storefront Top Bar"
+msgid "Add practical information to your pages with winegrower Top Bar"
+msgstr "Lägg till praktisk information till dina sidor med hjälp av winegrower Top Bar"
 
 #: inc/admin/welcome-screen/sections/add-ons.php:107
 msgid ""
-"Storefront Top Bar adds a widgetised content area at the top of your site "
+"winegrower Top Bar adds a widgetised content area at the top of your site "
 "and customise it's appearance in the Customizer. %sMore info &rarr;%s"
-msgstr "Storefront Top Bar lägger till ett område med widgetstöd högst upp på din butiks sidor och du kan anpassa dess utseende via Customiser. %sMer info &rarr;%s"
+msgstr "winegrower Top Bar lägger till ett område med widgetstöd högst upp på din butiks sidor och du kan anpassa dess utseende via Customiser. %sMer info &rarr;%s"
 
 #: inc/admin/welcome-screen/sections/add-ons.php:112
-msgid "Install Storefront Top Bar"
-msgstr "Installera Storefront Top Bar"
+msgid "Install winegrower Top Bar"
+msgstr "Installera winegrower Top Bar"
 
 #: inc/admin/welcome-screen/sections/add-ons.php:120
 msgid ""
@@ -244,10 +244,10 @@ msgstr "Få ett helt nytt utseende"
 
 #: inc/admin/welcome-screen/sections/child-themes.php:14
 msgid ""
-"Below you will find a selection of Storefront child themes that will "
+"Below you will find a selection of winegrower child themes that will "
 "transform the look and feel of your site while retaining the rock solid "
-"Storefront foundation."
-msgstr "Nedan finner du ett urval av Storefront barnteman som kan ge din butik helt nya utseenden utan att försaka Storefronts stabilitet och funktionalitet."
+"winegrower foundation."
+msgstr "Nedan finner du ett urval av winegrower barnteman som kan ge din butik helt nya utseenden utan att försaka winegrowers stabilitet och funktionalitet."
 
 #: inc/admin/welcome-screen/sections/child-themes.php:20
 msgid "Galleria Child Theme"
@@ -259,7 +259,7 @@ msgstr ""
 
 #: inc/admin/welcome-screen/sections/child-themes.php:22
 msgid ""
-"Galleria is a Storefront child theme perfect for fashion and design stores. "
+"Galleria is a winegrower child theme perfect for fashion and design stores. "
 "Stylish and minimalist, it gives sites a high class look and keeps products "
 "centerstage."
 msgstr ""
@@ -305,24 +305,24 @@ msgstr "Boutique"
 
 #: inc/admin/welcome-screen/sections/child-themes.php:46
 msgid ""
-"Boutique is a simple, traditionally designed Storefront child theme, ideal "
+"Boutique is a simple, traditionally designed winegrower child theme, ideal "
 "for small stores or boutiques. Add your logo, create a unique color scheme "
 "and start selling!"
-msgstr "Boutique är ett enkelt, traditionellt designat Storefront barntema. Idealiskt för små butiker. Komplettera med din logga, skapa ett eget unikt färgschema och börja sälja!"
+msgstr "Boutique är ett enkelt, traditionellt designat winegrower barntema. Idealiskt för små butiker. Komplettera med din logga, skapa ett eget unikt färgschema och börja sälja!"
 
 #: inc/admin/welcome-screen/sections/child-themes.php:51
 msgid "Read more %sabout Boutique%s &rarr;"
 msgstr "Läs mer %som Boutique%s &rarr;"
 
 #: inc/admin/welcome-screen/sections/getting-started.php:15
-msgid "Using Storefront"
-msgstr "Använda Storefront"
+msgid "Using winegrower"
+msgstr "Använda winegrower"
 
 #: inc/admin/welcome-screen/sections/getting-started.php:16
 msgid ""
-"We've purposely kept Storefront lean & mean so configuration is a breeze. "
+"We've purposely kept winegrower lean & mean so configuration is a breeze. "
 "Here are some common theme-setup tasks:"
-msgstr "Vi har medvetet gjort Storefront slimmat och samtidigt grymt så att konfigurationen är lätt. Här är några vanliga kom igång-saker:"
+msgstr "Vi har medvetet gjort winegrower slimmat och samtidigt grymt så att konfigurationen är lätt. Här är några vanliga kom igång-saker:"
 
 #: inc/admin/welcome-screen/sections/getting-started.php:20
 #: inc/admin/welcome-screen/sections/getting-started.php:23
@@ -331,10 +331,10 @@ msgstr "Installera WooCommerce"
 
 #: inc/admin/welcome-screen/sections/getting-started.php:21
 msgid ""
-"Although Storefront works fine as a standard WordPress theme, it really "
+"Although winegrower works fine as a standard WordPress theme, it really "
 "shines when used for an online store. Install WooCommerce and start selling "
 "now."
-msgstr "Även om Storefront fungerar bra som ett vanligt WordPress-tema, blommar det ut rejält när det används för en e-butik. Installera WooCommerce och börja sälja direkt."
+msgstr "Även om winegrower fungerar bra som ett vanligt WordPress-tema, blommar det ut rejält när det används för en e-butik. Installera WooCommerce och börja sälja direkt."
 
 #: inc/admin/welcome-screen/sections/getting-started.php:26
 msgid "Configure menu locations"
@@ -342,13 +342,13 @@ msgstr "Konfigurera menyers placering"
 
 #: inc/admin/welcome-screen/sections/getting-started.php:27
 msgid ""
-"Storefront includes three menu locations for primary, secondary and handheld"
+"winegrower includes three menu locations for primary, secondary and handheld"
 " navigation. The primary navigation is perfect for your key pages like the "
 "shop and product categories. The secondary navigation is better suited to "
 "lower traffic pages such as terms and conditions. The handheld navigation "
 "gives you complete control over what menu items to serve to handheld "
 "devices."
-msgstr "Storefront inkluderar tre menyer: primär, sekundär och mobil navigering. Den primära är perfekt för dina nyckelsidor som butiken och olika produktkategorier. Den sekundära passar bättre för sidor med lite mindre trafik som köpvillkor. Den mobila navigeringen ger dig möjlighet att specifikt ange vilka menyval som ska vara tillgängliga på mobila enheter."
+msgstr "winegrower inkluderar tre menyer: primär, sekundär och mobil navigering. Den primära är perfekt för dina nyckelsidor som butiken och olika produktkategorier. Den sekundära passar bättre för sidor med lite mindre trafik som köpvillkor. Den mobila navigeringen ger dig möjlighet att specifikt ange vilka menyval som ska vara tillgängliga på mobila enheter."
 
 #: inc/admin/welcome-screen/sections/getting-started.php:28
 msgid "Configure menus"
@@ -360,9 +360,9 @@ msgstr "Skapa ett färgtema"
 
 #: inc/admin/welcome-screen/sections/getting-started.php:31
 msgid ""
-"Using the WordPress Customizer you can tweak Storefront's appearance to "
+"Using the WordPress Customizer you can tweak winegrower's appearance to "
 "match your brand."
-msgstr "Genom att använda WordPress-anpassningarna kan du ställa in Storefronts utseende så att det matchar ditt varumärke."
+msgstr "Genom att använda WordPress-anpassningarna kan du ställa in winegrowers utseende så att det matchar ditt varumärke."
 
 #: inc/admin/welcome-screen/sections/getting-started.php:32
 msgid "Open the Customizer"
@@ -384,9 +384,9 @@ msgstr "Konfigurera startsidemallen"
 
 #: inc/admin/welcome-screen/sections/getting-started.php:47
 msgid ""
-"Storefront includes a homepage template that displays a selection of "
+"winegrower includes a homepage template that displays a selection of "
 "products from your store."
-msgstr "Storefront har en startsidemall som visar utvalda produkter från din butik."
+msgstr "winegrower har en startsidemall som visar utvalda produkter från din butik."
 
 #: inc/admin/welcome-screen/sections/getting-started.php:48
 msgid ""
@@ -411,9 +411,9 @@ msgstr "Visa dokumentation"
 
 #: inc/admin/welcome-screen/sections/getting-started.php:56
 msgid ""
-"You can read detailed information on Storefronts features and how to develop"
+"You can read detailed information on winegrowers features and how to develop"
 " on top of it in the documentation."
-msgstr "Du kan läsa detaljerad information i dokumentationen om Storefronts egenskaper och hur du utvecklar temat vidare."
+msgstr "Du kan läsa detaljerad information i dokumentationen om winegrowers egenskaper och hur du utvecklar temat vidare."
 
 #: inc/admin/welcome-screen/sections/getting-started.php:57
 msgid "View documentation &rarr;"
@@ -421,29 +421,29 @@ msgstr "Visa dokumentation &rarr;"
 
 #: inc/admin/welcome-screen/sections/intro.php:14
 msgid ""
-"Awesome! You've decided to use Storefront to enrich your WooCommerce store "
+"Awesome! You've decided to use winegrower to enrich your WooCommerce store "
 "design."
-msgstr "Fantastiskt! Du har valt att använda Storefront för att förstärka din WooCommerce-butiks design."
+msgstr "Fantastiskt! Du har valt att använda winegrower för att förstärka din WooCommerce-butiks design."
 
 #: inc/admin/welcome-screen/sections/intro.php:15
 msgid ""
 "Whether you're a store owner, WordPress developer, or both - we hope you "
-"enjoy Storefront's deep integration with WooCommerce core (including several"
+"enjoy winegrower's deep integration with WooCommerce core (including several"
 " popular WooCommerce extensions), plus the flexible design and extensible "
 "codebase that this theme provides."
-msgstr "Oavsett om du är butiksägare, WordPress-utvecklare, eller båda - vi hoppas att du uppskattar Storefronts djupa integration med WooCommerce-kärnan (inklusive flera populära WooCommerce-extensions), plus flexibiliteten i designen och den utvecklingsbara kodbasen som det här temat har."
+msgstr "Oavsett om du är butiksägare, WordPress-utvecklare, eller båda - vi hoppas att du uppskattar winegrowers djupa integration med WooCommerce-kärnan (inklusive flera populära WooCommerce-extensions), plus flexibiliteten i designen och den utvecklingsbara kodbasen som det här temat har."
 
 #: inc/admin/welcome-screen/sections/tabs.php:2
 msgid "Getting Started"
 msgstr "Kom igång"
 
 #: inc/admin/welcome-screen/sections/tabs.php:3
-msgid "Enhance Storefront"
-msgstr "Förbättra Storefront"
+msgid "Enhance winegrower"
+msgstr "Förbättra winegrower"
 
 #: inc/admin/welcome-screen/sections/tabs.php:4
-msgid "Storefront Child Themes"
-msgstr "Storefront barnteman"
+msgid "winegrower Child Themes"
+msgstr "winegrower barnteman"
 
 #: inc/admin/welcome-screen/sections/who.php:8
 msgid "The Woo Team"
@@ -488,8 +488,8 @@ msgid "View WooCommerce Documentation"
 msgstr "Visa WooCommerce-dokumentationen"
 
 #: inc/admin/welcome-screen/sections/who.php:27
-msgid "Can I contribute to Storefront?"
-msgstr "Kan jag bidra till Storefront?"
+msgid "Can I contribute to winegrower?"
+msgstr "Kan jag bidra till winegrower?"
 
 #: inc/admin/welcome-screen/sections/who.php:28
 msgid "Can I Contribute?"
@@ -498,17 +498,17 @@ msgstr "Kan jag bidra?"
 #: inc/admin/welcome-screen/sections/who.php:29
 msgid ""
 "Found a bug? Want to contribute a patch or create a new feature? GitHub is "
-"the place to go! Or would you like to translate Storefront in to your "
+"the place to go! Or would you like to translate winegrower in to your "
 "language? Get involved at Transifex."
-msgstr "Hittat en bugg? Vill du bidra med en patch eller skapa en ny funktion? GitHub är tjänsten för detta! Eller skulle du vilja översätta Storefront till ditt eget språk? Vi jobbar med Transifex."
+msgstr "Hittat en bugg? Vill du bidra med en patch eller skapa en ny funktion? GitHub är tjänsten för detta! Eller skulle du vilja översätta winegrower till ditt eget språk? Vi jobbar med Transifex."
 
 #: inc/admin/welcome-screen/sections/who.php:30
-msgid "Storefront at GitHub"
-msgstr "Storefront på GitHub"
+msgid "winegrower at GitHub"
+msgstr "winegrower på GitHub"
 
 #: inc/admin/welcome-screen/sections/who.php:30
-msgid "Storefront at Transifex"
-msgstr "Storefront på Transifex"
+msgid "winegrower at Transifex"
+msgstr "winegrower på Transifex"
 
 #: inc/admin/welcome-screen/sections/who.php:34
 msgid "Can't find a feature?"
@@ -516,13 +516,13 @@ msgstr "Saknar du någon funktion?"
 
 #: inc/admin/welcome-screen/sections/who.php:35
 msgid ""
-"Please suggest and vote on ideas / feature requests at the %sStorefront "
+"Please suggest and vote on ideas / feature requests at the %swinegrower "
 "Ideasboard%s. The most popular ideas will see prioritised development."
-msgstr "På %sStorefront Ideasboard%s kan du komma med önskemål om funktioner du gärna skulle se i Storefront och även rösta bland alla förslag. De mest populära förslagen kommer att prioriteras i vidareutvecklingen av Storefront."
+msgstr "På %swinegrower Ideasboard%s kan du komma med önskemål om funktioner du gärna skulle se i winegrower och även rösta bland alla förslag. De mest populära förslagen kommer att prioriteras i vidareutvecklingen av winegrower."
 
 #: inc/admin/welcome-screen/sections/who.php:37
-msgid "Are you enjoying Storefront?"
-msgstr "Gillar du Storefront?"
+msgid "Are you enjoying winegrower?"
+msgstr "Gillar du winegrower?"
 
 #: inc/admin/welcome-screen/sections/who.php:38
 msgid ""
@@ -531,24 +531,24 @@ msgstr "Varför inte lämna ett omdöme på %sWordpress.org%s? Vi skulle verklig
 
 #: inc/admin/welcome-screen/welcome-screen.php:47
 msgid ""
-"Thanks for choosing Storefront! You can read hints and tips on how get the "
+"Thanks for choosing winegrower! You can read hints and tips on how get the "
 "most out of your new theme on the %swelcome screen%s."
-msgstr "Tack för att du valt Storefront! Du kan läsa tips och tricks om hur du får ut mest möjliga ur ditt nya tema på %välkomstskärmen%s."
+msgstr "Tack för att du valt winegrower! Du kan läsa tips och tricks om hur du får ut mest möjliga ur ditt nya tema på %välkomstskärmen%s."
 
 #: inc/admin/welcome-screen/welcome-screen.php:48
-msgid "Get started with Storefront"
-msgstr "Kom igång med Storefront"
+msgid "Get started with winegrower"
+msgstr "Kom igång med winegrower"
 
 #: inc/customizer/controls/more.php:16
 msgid ""
-"There's a range of Storefront extensions available to put additional power "
-"in your hands. Check out the %sStorefront%s page in your dashboard for more "
+"There's a range of winegrower extensions available to put additional power "
+"in your hands. Check out the %swinegrower%s page in your dashboard for more "
 "information."
-msgstr "Det finns ett flertal kraftfulla tillägg till Storefront som underlättar för dig. Se vidare på %sStorefront%s sida i admin för mer information."
+msgstr "Det finns ett flertal kraftfulla tillägg till winegrower som underlättar för dig. Se vidare på %swinegrower%s sida i admin för mer information."
 
 #: inc/customizer/controls/more.php:20
-msgid "Enjoying Storefront?"
-msgstr "Gillar du Storefront?"
+msgid "Enjoying winegrower?"
+msgstr "Gillar du winegrower?"
 
 #: inc/customizer/controls/more.php:23
 msgid ""
@@ -773,22 +773,22 @@ msgid "Search Results for: %s"
 msgstr "Sökresultat för: %s"
 
 #. Theme Name of the plugin/theme
-msgid "Storefront"
-msgstr "Storefront"
+msgid "winegrower"
+msgstr "winegrower"
 
 #. Theme URI of the plugin/theme
-msgid "http://www.woothemes.com/storefront"
-msgstr "http://www.woothemes.com/storefront"
+msgid "http://www.woothemes.com/winegrower"
+msgstr "http://www.woothemes.com/winegrower"
 
 #. Description of the plugin/theme
 msgid ""
-"Storefront is the perfect theme for your next WooCommerce project. Designed "
+"winegrower is the perfect theme for your next WooCommerce project. Designed "
 "and developed by WooThemes, it features a deep integration with our market "
 "leading WooCommerce plugin, several layout & color options to personalise "
 "your shop, multiple widget regions, a responsive design and much more. "
 "Developers will love it's lean and extensible codebase making it a joy to "
 "customise and extend. Looking for a WooCommerce theme? Look no further!"
-msgstr "Storefront är det perfekta temat för ditt nästa WooCommerce-projekt. Designat och utvecklat av WooThemes, med djup integration med vårt marknadsledande WooCommerce-tillägg, med flera inställningar för att välja utseende och färger för att personalisera din butik, flera widget-områden, responsiv design och mycket mer. Utvecklare gillar den rena och utbyggbara kodbasen som gör det till en fröjd att anpassa och utöka. Letar du efter ett WooCommerce-tema? Här har du det!"
+msgstr "winegrower är det perfekta temat för ditt nästa WooCommerce-projekt. Designat och utvecklat av WooThemes, med djup integration med vårt marknadsledande WooCommerce-tillägg, med flera inställningar för att välja utseende och färger för att personalisera din butik, flera widget-områden, responsiv design och mycket mer. Utvecklare gillar den rena och utbyggbara kodbasen som gör det till en fröjd att anpassa och utöka. Letar du efter ett WooCommerce-tema? Här har du det!"
 
 #. Author of the plugin/theme
 msgid "WooThemes"

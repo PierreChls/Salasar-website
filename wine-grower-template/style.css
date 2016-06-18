@@ -663,7 +663,7 @@ a {
   a:focus {
     outline: 1px solid #96588a; }
 
-.storefront-cute * {
+.winegrower-cute * {
   font-family: "Comic Sans MS", sans-serif; }
 
 /**
@@ -756,7 +756,7 @@ a {
     width: 21.7391304348%;
     float: left;
     margin-right: 4.347826087%; }
-  .storefront-full-width-content .content-area {
+  .winegrower-full-width-content .content-area {
     width: 100%;
     float: left;
     margin-left: 0;

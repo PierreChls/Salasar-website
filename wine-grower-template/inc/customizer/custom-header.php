@@ -12,18 +12,18 @@
 	<?php endif; // End header image check. ?>
 
  *
- * @package storefront
+ * @package winegrower
  */
 
 /**
  * Setup the WordPress core custom header feature.
  *
- * @uses storefront_header_style()
- * @uses storefront_admin_header_style()
- * @uses storefront_admin_header_image()
+ * @uses winegrower_header_style()
+ * @uses winegrower_admin_header_style()
+ * @uses winegrower_admin_header_image()
  */
-function storefront_custom_header_setup() {
-	add_theme_support( 'custom-header', apply_filters( 'storefront_custom_header_args', array(
+function winegrower_custom_header_setup() {
+	add_theme_support( 'custom-header', apply_filters( 'winegrower_custom_header_args', array(
 		'default-image'          => '',
 		'header-text'     		 => false,
 		'width'                  => 1950,

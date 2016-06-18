@@ -2,6 +2,6 @@
 /**
  * The sidebar containing the main widget area.
  *
- * @package storefront
+ * @package winegrower
  */
 

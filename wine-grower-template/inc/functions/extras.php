@@ -4,16 +4,16 @@
  *
  * Eventually, some of the functionality here could be replaced by core features
  *
- * @package storefront
+ * @package winegrower
  */
 
 /**
- * Check whether the Storefront Customizer settings ar enabled
+ * Check whether the winegrower Customizer settings ar enabled
  * @return boolean
  * @since  1.1.2
  */
-function is_storefront_customizer_enabled() {
-	return apply_filters( 'storefront_customizer_enabled', true );
+function is_winegrower_customizer_enabled() {
+	return apply_filters( 'winegrower_customizer_enabled', true );
 }
 
 /**
@@ -22,7 +22,7 @@ function is_storefront_customizer_enabled() {
  * @param array $args Configuration arguments.
  * @return array
  */
-function storefront_page_menu_args( $args ) {
+function winegrower_page_menu_args( $args ) {
 	$args['show_home'] = true;
 	return $args;
 }
@@ -33,7 +33,7 @@ function storefront_page_menu_args( $args ) {
  * @param array $classes Classes for the body element.
  * @return array
  */
-function storefront_body_classes( $classes ) {
+function winegrower_body_classes( $classes ) {
 	// Adds a class of group-blog to blogs with more than 1 published author.
 	if ( is_multi_author() ) {
 		$classes[] = 'group-blog';
@@ -46,12 +46,12 @@ function storefront_body_classes( $classes ) {
 	/**
 	 * What is this?!
 	 * Take the blue pill, close this file and forget you saw the following code.
-	 * Or take the red pill, filter storefront_make_me_cute and see how deep the rabbit hole goes...
+	 * Or take the red pill, filter winegrower_make_me_cute and see how deep the rabbit hole goes...
 	 */
-	$cute	= apply_filters( 'storefront_make_me_cute', false );
+	$cute	= apply_filters( 'winegrower_make_me_cute', false );
 
 	if ( true === $cute ) {
-		$classes[] = 'storefront-cute';
+		$classes[] = 'winegrower-cute';
 	}
 
 	return $classes;
@@ -70,7 +70,7 @@ if ( ! function_exists( 'is_woocommerce_activated' ) ) {
  * Schema type
  * @return string schema itemprop type
  */
-function storefront_html_tag_schema() {
+function winegrower_html_tag_schema() {
 	$schema 	= 'http://schema.org/';
 	$type 		= 'WebPage';
 
@@ -97,8 +97,8 @@ function storefront_html_tag_schema() {
  *
  * @return bool
  */
-function storefront_categorized_blog() {
-	if ( false === ( $all_the_cool_cats = get_transient( 'storefront_categories' ) ) ) {
+function winegrower_categorized_blog() {
+	if ( false === ( $all_the_cool_cats = get_transient( 'winegrower_categories' ) ) ) {
 		// Create an array of all the categories that are attached to posts.
 		$all_the_cool_cats = get_categories( array(
 			'fields'     => 'ids',
@@ -111,27 +111,27 @@ function storefront_categorized_blog() {
 		// Count the number of categories that are attached to the posts.
 		$all_the_cool_cats = count( $all_the_cool_cats );
 
-		set_transient( 'storefront_categories', $all_the_cool_cats );
+		set_transient( 'winegrower_categories', $all_the_cool_cats );
 	}
 
 	if ( $all_the_cool_cats > 1 ) {
-		// This blog has more than 1 category so storefront_categorized_blog should return true.
+		// This blog has more than 1 category so winegrower_categorized_blog should return true.
 		return true;
 	} else {
-		// This blog has only 1 category so storefront_categorized_blog should return false.
+		// This blog has only 1 category so winegrower_categorized_blog should return false.
 		return false;
 	}
 }
 
 /**
- * Flush out the transients used in storefront_categorized_blog.
+ * Flush out the transients used in winegrower_categorized_blog.
  */
-function storefront_category_transient_flusher() {
+function winegrower_category_transient_flusher() {
 	// Like, beat it. Dig?
-	delete_transient( 'storefront_categories' );
+	delete_transient( 'winegrower_categories' );
 }
-add_action( 'edit_category', 'storefront_category_transient_flusher' );
-add_action( 'save_post',     'storefront_category_transient_flusher' );
+add_action( 'edit_category', 'winegrower_category_transient_flusher' );
+add_action( 'save_post',     'winegrower_category_transient_flusher' );
 
 /**
  * Call a shortcode function by tag name.

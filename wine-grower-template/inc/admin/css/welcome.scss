@@ -1,4 +1,4 @@
-.storefront-add-ons {
+.winegrower-add-ons {
 	overflow: hidden;
 	zoom: 1;
 
@@ -36,9 +36,9 @@
 				}
 			}
 
-			&.storefront-designer {
+			&.winegrower-designer {
 				.content {
-					background: url(../welcome-screen/img/storefront-designer.png) top left no-repeat;
+					background: url(../welcome-screen/img/winegrower-designer.png) top left no-repeat;
 				}
 			}
 		}
@@ -136,7 +136,7 @@
 @media
 (-webkit-min-device-pixel-ratio: 2),
 (min-resolution: 192dpi) {
-    .storefront-add-ons {
+    .winegrower-add-ons {
 		.add-on {
 			&.image-vertical {
 				&.product-hero {
@@ -160,9 +160,9 @@
 					}
 				}
 
-				&.storefront-designer {
+				&.winegrower-designer {
 					.content {
-						background-image: url(../welcome-screen/img/storefront-designer@2x.png);
+						background-image: url(../welcome-screen/img/winegrower-designer@2x.png);
 						background-size: 245px 303px;
 					}
 				}

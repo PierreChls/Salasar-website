@@ -1,8 +1,8 @@
 <?php
 /**
- * storefront setup functions
+ * winegrower setup functions
  *
- * @package storefront
+ * @package winegrower
  */
 
 /**
@@ -13,12 +13,12 @@ if ( ! isset( $content_width ) ) {
 }
 
 /**
- * Assign the Storefront version to a var
+ * Assign the winegrower version to a var
  */
-$theme 					= wp_get_theme( 'storefront' );
-$storefront_version 	= $theme['Version'];
+$theme 					= wp_get_theme( 'winegrower' );
+$winegrower_version 	= $theme['Version'];
 
-if ( ! function_exists( 'storefront_setup' ) ) :
+if ( ! function_exists( 'winegrower_setup' ) ) :
 	/**
 	 * Sets up theme defaults and registers support for various WordPress features.
 	 *
@@ -26,7 +26,7 @@ if ( ! function_exists( 'storefront_setup' ) ) :
 	 * runs before the init hook. The init hook is too late for some features, such
 	 * as indicating support for post thumbnails.
 	 */
-	function storefront_setup() {
+	function winegrower_setup() {
 
 		/*
 		 * Load Localisation files.
@@ -34,14 +34,14 @@ if ( ! function_exists( 'storefront_setup' ) ) :
 		 * Note: the first-loaded translation file overrides any following ones if the same translation is present.
 		 */
 
-		// wp-content/languages/themes/storefront-it_IT.mo
-		load_theme_textdomain( 'storefront', trailingslashit( WP_LANG_DIR ) . 'themes/' );
+		// wp-content/languages/themes/winegrower-it_IT.mo
+		load_theme_textdomain( 'winegrower', trailingslashit( WP_LANG_DIR ) . 'themes/' );
 
 		// wp-content/themes/child-theme-name/languages/it_IT.mo
-		load_theme_textdomain( 'storefront', get_stylesheet_directory() . '/languages' );
+		load_theme_textdomain( 'winegrower', get_stylesheet_directory() . '/languages' );
 
 		// wp-content/themes/theme-name/languages/it_IT.mo
-		load_theme_textdomain( 'storefront', get_template_directory() . '/languages' );
+		load_theme_textdomain( 'winegrower', get_template_directory() . '/languages' );
 
 		/**
 		 * Add default posts and comments RSS feed links to head.
@@ -57,9 +57,9 @@ if ( ! function_exists( 'storefront_setup' ) ) :
 
 		// This theme uses wp_nav_menu() in two locations.
 		register_nav_menus( array(
-			'primary'		=> __( 'Primary Menu', 'storefront' ),
-			'secondary'		=> __( 'Secondary Menu', 'storefront' ),
-			'handheld'		=> __( 'Handheld Menu', 'storefront' ),
+			'primary'		=> __( 'Primary Menu', 'winegrower' ),
+			'secondary'		=> __( 'Secondary Menu', 'winegrower' ),
+			'handheld'		=> __( 'Handheld Menu', 'winegrower' ),
 		) );
 
 		/*
@@ -76,8 +76,8 @@ if ( ! function_exists( 'storefront_setup' ) ) :
 		) );
 
 		// Setup the WordPress core custom background feature.
-		add_theme_support( 'custom-background', apply_filters( 'storefront_custom_background_args', array(
-			'default-color' => apply_filters( 'storefront_default_background_color', 'fcfcfc' ),
+		add_theme_support( 'custom-background', apply_filters( 'winegrower_custom_background_args', array(
+			'default-color' => apply_filters( 'winegrower_default_background_color', 'fcfcfc' ),
 			'default-image' => '',
 		) ) );
 
@@ -92,16 +92,16 @@ if ( ! function_exists( 'storefront_setup' ) ) :
 		// Declare support for title theme feature
 		add_theme_support( 'title-tag' );
 	}
-endif; // storefront_setup
+endif; // winegrower_setup
 
 /**
  * Register widget area.
  *
  * @link http://codex.wordpress.org/Function_Reference/register_sidebar
  */
-function storefront_widgets_init() {
+function winegrower_widgets_init() {
 	register_sidebar( array(
-		'name'          => __( 'Sidebar', 'storefront' ),
+		'name'          => __( 'Sidebar', 'winegrower' ),
 		'id'            => 'sidebar-1',
 		'description'   => '',
 		'before_widget' => '<aside id="%1$s" class="widget %2$s">',
@@ -111,7 +111,7 @@ function storefront_widgets_init() {
 	) );
 
 	register_sidebar( array(
-		'name'          => __( 'Header', 'storefront' ),
+		'name'          => __( 'Header', 'winegrower' ),
 		'id'            => 'header-1',
 		'description'   => '',
 		'before_widget' => '<aside id="%1$s" class="widget %2$s">',
@@ -120,13 +120,13 @@ function storefront_widgets_init() {
 		'after_title'   => '</h3>',
 	) );
 
-	$footer_widget_regions = apply_filters( 'storefront_footer_widget_regions', 4 );
+	$footer_widget_regions = apply_filters( 'winegrower_footer_widget_regions', 4 );
 
 	for ( $i = 1; $i <= intval( $footer_widget_regions ); $i++ ) {
 		register_sidebar( array(
-			'name' 				=> sprintf( __( 'Footer %d', 'storefront' ), $i ),
+			'name' 				=> sprintf( __( 'Footer %d', 'winegrower' ), $i ),
 			'id' 				=> sprintf( 'footer-%d', $i ),
-			'description' 		=> sprintf( __( 'Widgetized Footer Region %d.', 'storefront' ), $i ),
+			'description' 		=> sprintf( __( 'Widgetized Footer Region %d.', 'winegrower' ), $i ),
 			'before_widget' 	=> '<aside id="%1$s" class="widget %2$s">',
 			'after_widget' 		=> '</aside>',
 			'before_title' 		=> '<h3>',
@@ -140,14 +140,14 @@ function storefront_widgets_init() {
  * Enqueue scripts and styles.
  * @since  1.0.0
  */
-function storefront_scripts() {
-	global $storefront_version;
+function winegrower_scripts() {
+	global $winegrower_version;
 
-	wp_enqueue_style( 'storefront-style', get_stylesheet_uri(), '', $storefront_version );
+	wp_enqueue_style( 'winegrower-style', get_stylesheet_uri(), '', $winegrower_version );
 
-	wp_enqueue_script( 'storefront-navigation', get_template_directory_uri() . '/js/navigation.min.js', array(), '20120206', true );
+	wp_enqueue_script( 'winegrower-navigation', get_template_directory_uri() . '/js/navigation.min.js', array(), '20120206', true );
 
-	wp_enqueue_script( 'storefront-skip-link-focus-fix', get_template_directory_uri() . '/js/skip-link-focus-fix.min.js', array(), '20130115', true );
+	wp_enqueue_script( 'winegrower-skip-link-focus-fix', get_template_directory_uri() . '/js/skip-link-focus-fix.min.js', array(), '20130115', true );
 
 	if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {
 		wp_enqueue_script( 'comment-reply' );
