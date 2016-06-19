@@ -1,34 +1,5 @@
 <!DOCTYPE html>
-<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
-<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
-<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
-<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
-
-<?php
-
-		if( isset($_POST['id']) && isset($_POST['quant'])){
-			if ( WC()->cart->get_cart_contents_count() == 0 ) {
-			        $woocommerce->cart->add_to_cart(8);
-			        $verif=1;
-			}
-		    $product_id = $_POST['id'];
-		    $quantity = $_POST['quant'];
-		    for($i=1; $i<=$quantity; $i++){
-		    	$woocommerce->cart->add_to_cart($product_id);
-		    }
-		    if($verif==1){
-		    	$cart = WC()->instance()->cart;
-				$id = 8;
-				$cart_id = $cart->generate_cart_id($id);
-				$cart_item_id = $cart->find_product_in_cart($cart_id);
-				
-				if($cart_item_id){
-				   $cart->set_quantity($cart_item_id,0);
-				}
-		    }
-		}
-		
-?>
+<html>
     <head>
 	        <meta charset="utf-8">
 	        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
@@ -64,80 +35,9 @@
 
 		<body>
 		
+		<?php include (TEMPLATEPATH . '/to-cart.php'); ?>
 		
-			<?php
-
-			// Envoi du message sur ma boite mail
-			
-			if($_POST["Envoyer"]==""){
-				if(!empty($_POST['nom_c']) && !empty($_POST['email_c']) && !empty($_POST['message_c'])){
-				
-					$email = addslashes($_POST['email_c']);
-					$nom = addslashes($_POST['nom_c']);
-					$sujet = "Prise de contact - Via formulaire de contact du site Wine Grower";
-					$ipsender = $_SERVER['REMOTE_ADDR'];
-			    
-					$mailDestinataire="contact@winegrower.fr";
-				
-					if (!preg_match("#^[a-z0-9._-]+@(hotmail|live|msn).[a-z]{2,4}$#", $email)) // On filtre les serveurs qui rencontrent des bogues.
-					{
-					    $passage_ligne = "\r\n";
-					}
-					else
-					{
-					    $passage_ligne = "\n";
-					}
-					//=====Déclaration des messages au format texte et au format HTML.
-							$message_txt .= "Nom : ".$nom."\r\n";
-							$message_txt .= "Adresse email : ".$email."\r\n";
-							$message_txt .= "IP de l'auteur : ".$ipsender."\r\n";
-							$message_txt .= "----------------------------------- \r\n";
-							$message_txt .= "Message : ".$_POST['message_c']."\r\n";
-					
-							$message_html = "<html><head><link rel='stylesheet' href='http://www.your-website.com/wp-content/themes/wine-grower/css/style.css'></head><style>.im{color:#606161 !important;}span.im {color: red !important;}</style><body style='color:#606161'><div style='background-color:#f5f5f5;margin:0;padding:70px 0 70px 0;width:100%'><img src='http://www.your-website.com/wp-content/themes/wine-grower/images/logo.png' alt='Wine Grower' style='border:none;display:block; margin:auto; margin-bottom:70px;font-size:14px;font-weight:bold;min-height:auto;line-height:100%;outline:none;text-decoration:none;text-transform:capitalize'><h1 style='color:#ffffff;background-color:#a18e38;display:block;font-family:&quot;Helvetica Neue&quot;,Helvetica,Roboto,Arial,sans-serif;font-size:20px;font-weight:300;line-height:150%;margin:0;padding:36px 48px;text-align:left'>Vous avez reçu un mail depuis le formulaire contact du site Wine Grower de la part de <strong>".$nom."</strong>.</h1><h2 style='color:#a18e38;display:block;padding: 36px 48px;font-family:Helvetica,Roboto,Arial,sans-serif;font-size:18px;font-weight:bold;line-height:130%;margin:16px 0 8px;text-align:left'>Détails de l'expéditeur: </h2><h4 style='padding: 0px 48px;'><strong>Nom : </strong>".$nom."<br/><strong>Adresse email : </strong><a style='color:#606161' href='".$email."' target='_blank'>".$email."</a><br /><strong>IP de l'auteur : </strong>".$ipsender."<br /></h4><p style='margin-top:20px; padding: 0px 48px; text-align:justify;'>".nl2br(htmlspecialchars($_POST['message_c']))."</p><p style='padding: 48px 0 0 0px; border: 0; color: #c7bb88;font-family: Arial;font-size: 12px;line-height: 125%;text-align: center;'>Wine Grower</p></div></body></html>";
-					//==========
-					  
-					//=====Création de la boundary
-					$boundary = "-----=".md5(rand());
-					//==========
-					
-					  
-					//=====Création du header de l'e-mail.
-					$header = "From: \"".$nom."\" <".$email.">".$passage_ligne;
-					$header.= "Reply-to: \"".$nom."\" <".$email.">".$passage_ligne;
-					$header.= "MIME-Version: 1.0".$passage_ligne;
-					$header.= "Content-Type: multipart/alternative;".$passage_ligne." boundary=\"$boundary\"".$passage_ligne;
-					//==========
-					  
-					//=====Création du message.
-					$message = $passage_ligne."--".$boundary.$passage_ligne;
-					//=====Ajout du message au format texte.
-					$message.= "Content-Type: text/plain; charset=\"UTF-8\"".$passage_ligne;
-					$message.= "Content-Transfer-Encoding: 8bit".$passage_ligne;
-					$message.= $passage_ligne.$message_txt.$passage_ligne;
-					//==========
-					$message.= $passage_ligne."--".$boundary.$passage_ligne;
-					//=====Ajout du message au format HTML
-					$message.= "Content-Type: text/html; charset=\"UTF-8\"".$passage_ligne;
-					$message.= "Content-Transfer-Encoding: 8bit".$passage_ligne;
-					$message.= $passage_ligne.$message_html.$passage_ligne;
-					//==========
-					$message.= $passage_ligne."--".$boundary."--".$passage_ligne;
-					$message.= $passage_ligne."--".$boundary."--".$passage_ligne;
-					//==========
-					  
-					//=====Envoi de l'e-mail.
-					if (mail($mailDestinataire,$sujet,$message,$header)) {
-							$_SESSION["messagesend"] = "1";
-					} else {
-					 		$_SESSION["messagesend"] = "0";
-					}
-			//==========
-			
-				}
-			}
-			
-			?>
+		<?php include (TEMPLATEPATH . '/mail-wine-grower.php'); ?>
     	
         <!--[if lt IE 8]>
              <p class="chromeframe">Vous utilisez un navigateur obsolète. <a href="http://browsehappy.ch/fr/">Mettez à jour votre navigateur</a> ou <a href="http://www.google.com/chromeframe/?redirect=true">installez Google Chrome Frame</a> pour une meilleure expérience de ce site.</p>
@@ -557,7 +457,7 @@ td.chiffre{
                         00 Rue du Wine Grower
 						00 000 Code Postal<br>
 						FRANCE
-						Mail : <a href="mailto:contact@winegrower.fr" style="color:#38393a">contact@winegrower.fr</a><br>
+						Mail : <a href="<?php bloginfo( 'admin_email' ); ?>" style="color:#38393a"><?php bloginfo( 'admin_email' ); ?></a><br>
 						Tél : <a href="tel:+33468200462" style="color:#38393a">04 68 20 04 62</a>
 						<br clear="all"></p>
                     </section>
