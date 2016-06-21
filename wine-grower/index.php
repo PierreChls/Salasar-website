@@ -152,9 +152,9 @@
                         00 Rue du Wine Grower<br/>
                         00 000 Ville<br/>
                         FRANCE<br/>
-						Mail : <a href="mailto:<?php bloginfo( 'admin_email' ); ?>" style="color:#38393a"><?php bloginfo( 'admin_email' ); ?></a><br>
-						Tél : <a href="tel:+33468200462" style="color:#38393a">04 68 20 04 62</a>
-						<br clear="all"></p>
+                        Mail : <a href="mailto:<?php bloginfo( 'admin_email' ); ?>" style="color:#38393a"><?php bloginfo( 'admin_email' ); ?></a><br/>
+                        Tél : <a href="tel:+33468200462" style="color:#38393a">04 68 20 04 62</a>
+                        <br clear="all"/></p>
                     </section>
                 </article>
             </div> 
