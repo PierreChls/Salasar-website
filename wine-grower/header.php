@@ -16,6 +16,7 @@
 		<link rel="shortcut icon" href="<?php bloginfo('template_directory'); ?>/images/favicon.png" type="image/png">
 	    <link rel="stylesheet" href="<?php bloginfo('template_directory'); ?>/css/normalize.min.css">
 	    <link rel="stylesheet" href="<?php bloginfo('template_directory'); ?>/css/style.css">
+	    <link rel="stylesheet" href="<?php bloginfo('template_directory'); ?>/css/home-style.css">
 	    <link rel="stylesheet" href="<?php bloginfo('template_directory'); ?>/css/supersized.css">
 			
 		<link rel="stylesheet" href="<?php bloginfo('template_directory'); ?>/css/style_video.css">

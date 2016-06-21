@@ -1,90 +1,15 @@
-<!DOCTYPE html>
-<html>
-    <head>
-	        <meta charset="utf-8">
-	        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-	        <title><?php bloginfo('name'); ?></title>
-	        <meta name="description" content="<?php bloginfo('description'); ?>">
-	        <meta name="author" content="<?php bloginfo('name'); ?>" />
-	        <meta property="og:url" content="<?php echo get_site_url(); ?>/" /> 
-			<meta property="og:image" content="<?php bloginfo('template_directory'); ?>/images/og-image.png" />
-			<meta property="og:site_name" content="<?php bloginfo('name'); ?>" />
-			<meta property="og:description" content="<?php bloginfo('description'); ?>" />
-	        
-	        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0"/>
-		    <link rel="shortcut icon" href="<?php bloginfo('template_directory'); ?>/images/favicon.ico" type="image/x-icon">
-		    <link rel="shortcut icon" href="<?php bloginfo('template_directory'); ?>/images/favicon.png" type="image/png">
-	        <link rel="stylesheet" href="<?php bloginfo('template_directory'); ?>/css/normalize.min.css">
-	        <link rel="stylesheet" href="<?php bloginfo('template_directory'); ?>/css/style.css">
-			<link rel="stylesheet" href="<?php bloginfo('template_directory'); ?>/css/supersized.css">
-			
-			<link rel="stylesheet" href="<?php bloginfo('template_directory'); ?>/css/style_video.css">
-	        <link rel="stylesheet" href="<?php bloginfo('template_directory'); ?>/css/bower_components/BigVideo/css/bigvideo.css">
-	
-	        <script src="<?php bloginfo('template_directory'); ?>/js/vendor/modernizr-2.6.2-respond-1.1.0.min.js"></script>
-	        
-	        <!-- jQuery library (served from Google) -->
-			<script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
-			
-			<!-- bxSlider Javascript file -->
-			<script src="<?php bloginfo('template_directory'); ?>/BxSlider/jquery.bxslider.min.js"></script>
-			<script src="<?php bloginfo('template_directory'); ?>/BxSlider/jquery.bxslider.js"></script>
-			<!-- bxSlider CSS file -->
-			<link href="<?php bloginfo('template_directory'); ?>/BxSlider/jquery.bxslider.css" rel="stylesheet" />
-        </head>
+<?php
+/**
+ *
+ * @package winegrower
+ */
 
-		<body>
-		
-		<?php include (TEMPLATEPATH . '/to-cart.php'); ?>
-		
-		<?php include (TEMPLATEPATH . '/mail-wine-grower.php'); ?>
-    	
-        <!--[if lt IE 8]>
-             <p class="chromeframe">Vous utilisez un navigateur obsolète. <a href="http://browsehappy.ch/fr/">Mettez à jour votre navigateur</a> ou <a href="http://www.google.com/chromeframe/?redirect=true">installez Google Chrome Frame</a> pour une meilleure expérience de ce site.</p>
-        <![endif]-->
-        <div class="header-container" id="top">
-            <header class="wrapper clearfix">
-                <h1 class="title"><a href="<?php echo get_site_url(); ?>/"><span></span></a></h1>
-            </header>    
-        </div>
-        <nav id="nav-container">
-            <ul class="wrapper clearfix menu_complete">
-                <li><a href="<?php echo get_site_url(); ?>/histoire/">Histoire</a></li>
-                <li><a href="<?php echo get_site_url(); ?>/terroir/">Le terroir</a></li>
-                <li><a href="#cuvees">Nos cuvées</a></li>
-                <li><a href="#tarifs">Nos tarifs</a></li>
-                <li><a href="<?php echo get_site_url(); ?>/phototeque//">Phototèque</a></li>
-                <li><a href="<?php echo get_site_url(); ?>/blog/">Blog</a></li>
-                <li><a href="#contact">Contact</a></li>
-                <li style="width:8%;"><a href="<?php echo get_site_url(); ?>/my-account/"><img src="<?php bloginfo('template_directory'); ?>/images/menu/account.svg" style="width: 15px; height: 15px;" /></a></li>
-                <li style="width:8%;"><a href="<?php echo get_site_url(); ?>/cart/"><img src="<?php bloginfo('template_directory'); ?>/images/menu/cart.svg" style="width: 15px; height: 15px;" /></a></li>
-            </ul>
-            <ul class="wrapper clearfix menu_responsive">
-            	<li id="open_menu" data-dialog="somedialog" style="width: 100%; cursor:pointer;"><img src="<?php bloginfo('template_directory'); ?>/images/menu/menu.svg" style="width: auto; height: 100%;" /></li>
-            </ul>
-        </nav>
-		<script>
-			function simulate_remove(){
-				$('#link_remove_first_product').trigger( 'click' );
-			}
-		</script>
+ include (TEMPLATEPATH . '/to-cart.php');
+ include (TEMPLATEPATH . '/mail-wine-grower.php');
+ 
+ get_header(); ?>
 
-<style>
-.bxslider div.slide .slide_scena{
-	display: none;
-}
-input.quantity{
-	background-color: rgba(0, 0, 0, 0.1);
-	width: 50%;
-    margin: auto;
-    text-align: center;
-}
-td.chiffre{
-	text-align: center;
-}
-</style>
-
-<div class="main-container nobg container-video" id="presentation"></div>
+ 	<div class="main-container nobg container-video" id="presentation"></div>
         
         <div id="code_promo" class="main-container" style="background-color: rgba(247,247,247,0.8)">
         	 <?php
@@ -192,244 +117,14 @@ td.chiffre{
                    </section>
                 </article>
             </div> 
-        </div> 
-        
-         
-   <style type="text/css">
-      #map-canvas { width: 100%; height: 200px; margin: 0;}
-      @media screen and (max-width: 860px){
-			.text_scena_description {
-			    background-color: inherit !important;
-			}
-		}
- </style>     
+        </div>   
         
          <div class="main-container">
          
          <div id="map-canvas">
+         
          <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDQj19bhjOYQec1_CBi_Hp638fLO23QBfY&sensor=false"></script>
-			
-			<script type="text/javascript">
-      function initialize() {
-
-        var styles = [
-    {
-        "featureType": "all",
-        "elementType": "labels.text.fill",
-        "stylers": [
-            {
-                "saturation": 36
-            },
-            {
-                "color": "#ffffff"
-            },
-            {
-                "lightness": 40
-            }
-        ]
-    },
-    {
-        "featureType": "all",
-        "elementType": "labels.text.stroke",
-        "stylers": [
-            {
-                "visibility": "on"
-            },
-            {
-                "color": "#000000"
-            },
-            {
-                "lightness": 16
-            }
-        ]
-    },
-    {
-        "featureType": "all",
-        "elementType": "labels.icon",
-        "stylers": [
-            {
-                "visibility": "off"
-            }
-        ]
-    },
-    {
-        "featureType": "administrative",
-        "elementType": "geometry.fill",
-        "stylers": [
-            {
-                "color": "#000000"
-            },
-            {
-                "lightness": 20
-            },
-            {
-                "gamma": "1.00"
-            }
-        ]
-    },
-    {
-        "featureType": "administrative",
-        "elementType": "geometry.stroke",
-        "stylers": [
-            {
-                "color": "#000000"
-            },
-            {
-                "lightness": 17
-            },
-            {
-                "weight": 1.2
-            }
-        ]
-    },
-    {
-        "featureType": "landscape",
-        "elementType": "geometry",
-        "stylers": [
-            {
-                "color": "#000000"
-            },
-            {
-                "lightness": 20
-            },
-            {
-                "gamma": "0.00"
-            }
-        ]
-    },
-    {
-        "featureType": "poi",
-        "elementType": "geometry",
-        "stylers": [
-            {
-                "color": "#000000"
-            },
-            {
-                "lightness": 21
-            },
-            {
-                "gamma": "0.00"
-            }
-        ]
-    },
-    {
-        "featureType": "road.highway",
-        "elementType": "geometry.fill",
-        "stylers": [
-            {
-                "color": "#b7a56d"
-            },
-            {
-                "lightness": 17
-            },
-            {
-                "gamma": "0.00"
-            }
-        ]
-    },
-    {
-        "featureType": "road.highway",
-        "elementType": "geometry.stroke",
-        "stylers": [
-            {
-                "color": "#b7a56d"
-            },
-            {
-                "lightness": 29
-            },
-            {
-                "weight": "0.01"
-            },
-            {
-                "saturation": "0"
-            },
-            {
-                "gamma": "0.00"
-            }
-        ]
-    },
-    {
-        "featureType": "road.arterial",
-        "elementType": "geometry",
-        "stylers": [
-            {
-                "color": "#b7a56d"
-            },
-            {
-                "lightness": 18
-            }
-        ]
-    },
-    {
-        "featureType": "road.local",
-        "elementType": "geometry",
-        "stylers": [
-            {
-                "color": "#b7a56d"
-            },
-            {
-                "lightness": 16
-            }
-        ]
-    },
-    {
-        "featureType": "transit",
-        "elementType": "geometry",
-        "stylers": [
-            {
-                "color": "#000000"
-            },
-            {
-                "lightness": 19
-            }
-        ]
-    },
-    {
-        "featureType": "water",
-        "elementType": "geometry",
-        "stylers": [
-            {
-                "color": "#000000"
-            },
-            {
-                "lightness": 17
-            },
-            {
-                "gamma": "1.00"
-            }
-        ]
-    }
-]
-        
-        ;
-
-        var styledMap = new google.maps.StyledMapType(styles, {name: "Gmap stylée"});
-
-		var myLatlng = new google.maps.LatLng(42.916826, 2.20505);
-		
-        var mapOptions = {
-          center: new google.maps.LatLng(42.916826, 2.20505),
-          zoom: 12,
-          mapTypeId: google.maps.MapTypeId.ROADMAP,
-          scrollwheel: false
-        };
-        
-		
-        var map = new google.maps.Map(document.getElementById("map-canvas"), mapOptions);
-		
-		var marker = new google.maps.Marker({
-			position: myLatlng,
-			map: map,
-			title: 'My Home'
-			});
-		
-        map.mapTypes.set('map_style', styledMap);
-        map.setMapTypeId('map_style');
-
-      }
-
-      google.maps.event.addDomListener(window, 'load', initialize);
-    </script>
+         <script src="<?php bloginfo('template_directory'); ?>/js/home-script.js"></script>
 		</div>
          
          
@@ -453,10 +148,10 @@ td.chiffre{
                     </section>
                     <section class="col2" style="float:right;">
                     	<h2 style="text-align:right;">Coordonnées</h2>
-                        <p style="text-align:right;">Wine Grower<br/>
+                        <p style="text-align:right;">Wine Grower<br>
                         00 Rue du Wine Grower
-						00 000 Code Postal<br/>
-						FRANCE<br/>
+						00 000 Code Postal<br>
+						FRANCE
 						Mail : <a href="<?php bloginfo( 'admin_email' ); ?>" style="color:#38393a"><?php bloginfo( 'admin_email' ); ?></a><br>
 						Tél : <a href="tel:+33468200462" style="color:#38393a">04 68 20 04 62</a>
 						<br clear="all"></p>

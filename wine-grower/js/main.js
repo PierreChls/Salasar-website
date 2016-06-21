@@ -1,4 +1,4 @@
-$("div.main-container.nobg.container-video").append("<video muted preload='auto' autoplay='true' loop><source src='http://www.WINE-GROWER.com/wp-content/themes/wine-grower/BigVideo/vids/wine-grower.mp4' type='video/mp4' /><source src='http://www.WINE-GROWER.com/wp-content/themes/wine-grower/BigVideo/vids/wine-grower.webm' type='video/webm' /><source src='http://www.WINE-GROWER.com/wp-content/themes/wine-grower/BigVideo/vids/wine-grower.ogv' type='video/ogg' /></video>");
+$("div.main-container.nobg.container-video").append("<video muted preload='auto' autoplay='true' loop><source src='http://WINE-GROWER.COM/wp-content/themes/wine-grower/BigVideo/vids/wine-grower.mp4' type='video/mp4' /><source src='http://WINE-GROWER.COM/wp-content/themes/wine-grower/BigVideo/vids/wine-grower.webm' type='video/webm' /><source src='http://WINE-GROWER.COM/wp-content/themes/wine-grower/BigVideo/vids/wine-grower.ogv' type='video/ogg' /></video>");
 
 
 function MM_validateForm() { //v4.0
