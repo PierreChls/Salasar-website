@@ -1,34 +1,49 @@
-[![Version](https://img.shields.io/badge/version-1.0-green.svg)](https://img.shields.io/badge/version-1.1-green.svg) [![Build status](https://img.shields.io/badge/build-passing-green.svg)](https://img.shields.io/badge/build-passing-green.svg) [![CMS](https://img.shields.io/badge/CMS-WordPress-lightgrey.svg)](https://img.shields.io/badge/CMS-WordPress-lightgrey.svg)
+[![Version](https://img.shields.io/badge/version-1.0-green.svg)](https://img.shields.io/badge/version-1.1-green.svg) [![Build status](https://img.shields.io/badge/build-passing-green.svg)](https://img.shields.io/badge/build-passing-green.svg) [![CMS](https://img.shields.io/badge/CMS-WordPress-lightgrey.svg)](https://img.shields.io/badge/CMS-WordPress-lightgrey.svg) [![eCommerce](https://img.shields.io/badge/E%20Commerce%20solution-WooCommerce-lightgrey.svg)](https://img.shields.io/badge/E%20Commerce%20solution-WooCommerce-lightgrey.svg)
 
 # Wine Grower template
 
 ![preview](https://raw.githubusercontent.com/PierreChls/wine-grower-template/master/wine-grower/images/preview.png)
 
-Wordpress template for Salasar.
-
-**Supported browsers :**
-
-- Google Chrome
-- Firefox
-- Sarafi
-- Internet Explorer
-- Opera
-
 ## How to use it
 
 ### Clone the project
 
-    git clone https://github.com/PierreChls/Salasar-website.git
+    git clone https://github.com/PierreChls/wine-grower-template.git
     
 ### Add theme to your WordPress
 
-- **Upload** the folder named *bec3-template* to `/wp-content/themes/` using your favorite FTP Client
-- **Activate** it via admin interface (`Appearance > Themes`)
+- **Upload** the folder named *wine-grower* to `/wp-content/themes/` folder using your favorite FTP Client
+- **Activate** it via your admin interface (`Appearance > Themes`)
+
+### Install WooCommerce
+
+- **Download** WooCommerce plugin 
+    - from [WordPress](https://fr.wordpress.org/plugins/woocommerce/) website  
+    - from [WooThemes](https://www.woothemes.com/woocommerce/) website 
+    - from your admin interface (`Plugins > Add`) and search "*WooCommerce*"
+    
+- **Active** WooCommerce plugin 
+    - from your admin interface (`Plugins`) and click to "*Activate*"
+    - follow WooCommerce configuration and complete with your settings
+    
+- **Active** your favorite langage
+    - download your langage from the [langage pack](https://translate.wordpress.org/projects/wp-plugins/woocommerce/language-packs)
+    - add downloaded files into WooCommerce plugin folder
+    
+ 
+### Create content
+
+#### Add some pages
+
+#### Add some product
+
+#### Add some article categories
+
+#### Add some articles   
+
     
 ## Prior installation
 
 You have to download [Wordpress](https://wordpress.org/download/) and install it on you server.
-
-Woocommerce : [Langage Pack](https://translate.wordpress.org/projects/wp-plugins/woocommerce/language-packs)
 
 
