@@ -1,6 +1,8 @@
 [![Version](https://img.shields.io/badge/version-1.0-green.svg)](https://img.shields.io/badge/version-1.1-green.svg) [![Build status](https://img.shields.io/badge/build-passing-green.svg)](https://img.shields.io/badge/build-passing-green.svg) [![CMS](https://img.shields.io/badge/CMS-WordPress-lightgrey.svg)](https://img.shields.io/badge/CMS-WordPress-lightgrey.svg)
 
-# Salasar website template
+# Wine Grower template 🍇
+
+![preview](https://raw.githubusercontent.com/PierreChls/wine-grower-template/master/wine-grower/images/preview.png)
 
 Wordpress template for Salasar.
 
