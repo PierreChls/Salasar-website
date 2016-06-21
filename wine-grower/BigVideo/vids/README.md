@@ -18,6 +18,7 @@
 
 ```
 vids/
+├── .gitignore
 ├── README.md
 ├── wine-grower.mp4
 ├── wine-grower.ogv
