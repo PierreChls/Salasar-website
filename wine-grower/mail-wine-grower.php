@@ -2,15 +2,15 @@
 
 	if($_POST["Envoyer"]==""){
 		if(!empty($_POST['nom_c']) && !empty($_POST['email_c']) && !empty($_POST['message_c'])){
-
-			$email = addslashes($_POST['email_c']);
-			$nom = addslashes($_POST['nom_c']);
-			$sujet = "Prise de contact - Via formulaire de contact du site Wine Grower";
-			$ipsender = $_SERVER['REMOTE_ADDR'];
-
+			
 			$mailDestinataire= get_bloginfo('admin_email');
 			$titleWebsite = get_bloginfo('name');
 			$themeURL = get_bloginfo('template_url');
+			
+			$email = addslashes($_POST['email_c']);
+			$nom = addslashes($_POST['nom_c']);
+			$sujet = "Prise de contact - Via formulaire de contact du site " . $titleWebsite ;
+			$ipsender = $_SERVER['REMOTE_ADDR'];
 
 			if (!preg_match("#^[a-z0-9._-]+@(hotmail|live|msn).[a-z]{2,4}$#", $email)){
 				$passage_ligne = "\r\n";
