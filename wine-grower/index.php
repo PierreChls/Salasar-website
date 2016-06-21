@@ -57,7 +57,7 @@
                         <h2>TARIFS / BON DE COMMANDE</h2>
                         <p>Merci de remplir la colonne quantité.</p>
                         
-                        <form id="form_bon_commande" action="cart/" method="post" id="bdc" onsubmit="send_form_cuv()">
+                        <form id="form_bon_commande" action="panier/" method="post" id="bdc" onsubmit="send_form_cuv()">
                         
                         	<?php
 					            $args = array( 'post_type' => 'product', 'posts_per_page' => -1, 'numberposts' => -1, 'stock' => 1, 'orderby' =>'date','order' => 'ASC' );

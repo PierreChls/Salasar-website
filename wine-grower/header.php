@@ -51,8 +51,8 @@
                 <li><a href="<?php echo get_site_url(); ?>/phototeque/">Phototèque</a></li>
                 <li><a href="<?php echo get_site_url(); ?>/blog/">Blog</a></li>
                 <li><a href="<?php echo get_site_url(); ?>/#contact">Contact</a></li>
-                <li style="width:8%;"><a href="<?php echo get_site_url(); ?>/my-account/"><img src="<?php bloginfo('template_directory'); ?>/images/menu/account.svg" style="width: 15px; height: 15px;" /></a></li>
-                <li style="width:8%;"><a href="<?php echo get_site_url(); ?>/cart/"><img src="<?php bloginfo('template_directory'); ?>/images/menu/cart.svg" style="width: 15px; height: 15px;" /></a></li>
+                <li style="width:8%;"><a href="<?php echo get_site_url(); ?>/mon-compte/"><img src="<?php bloginfo('template_directory'); ?>/images/menu/account.svg" style="width: 15px; height: 15px;" /></a></li>
+                <li style="width:8%;"><a href="<?php echo get_site_url(); ?>/panier/"><img src="<?php bloginfo('template_directory'); ?>/images/menu/cart.svg" style="width: 15px; height: 15px;" /></a></li>
             </ul>
             <ul class="wrapper clearfix menu_responsive">
             	<li id="open_menu" data-dialog="somedialog" style="width: 100%; cursor:pointer;"><img src="<?php bloginfo('template_directory'); ?>/images/menu/menu.svg" style="width: auto; height: 100%;" /></li>
