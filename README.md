@@ -1,8 +1,8 @@
 [![Version](https://img.shields.io/badge/version-1.0-green.svg)](https://img.shields.io/badge/version-1.1-green.svg) [![Build status](https://img.shields.io/badge/build-passing-green.svg)](https://img.shields.io/badge/build-passing-green.svg) [![CMS](https://img.shields.io/badge/CMS-WordPress-lightgrey.svg)](https://img.shields.io/badge/CMS-WordPress-lightgrey.svg) [![eCommerce](https://img.shields.io/badge/E%20Commerce%20solution-WooCommerce-lightgrey.svg)](https://img.shields.io/badge/E%20Commerce%20solution-WooCommerce-lightgrey.svg)
 
-# Wine Grower template
+# Wine Grower template - *Charles Clement*
 
-![preview](https://raw.githubusercontent.com/PierreChls/wine-grower-template/master/wine-grower/images/preview.png)
+![preview](https://raw.githubusercontent.com/PierreChls/wine-grower-template/template-charles-clement/wine-grower/images/preview.png)
 
 ## How to use it
 
