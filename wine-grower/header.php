@@ -40,6 +40,7 @@
         <div class="header-container" id="top">
             <header class="wrapper clearfix">
                 <h1 class="title"><a href="<?php echo get_site_url(); ?>/"><span></span></a></h1>
+                <p>Une famille est née de notre terre</p>
             </header>    
         </div>
         <nav id="nav-container">
