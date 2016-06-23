@@ -17,6 +17,10 @@ if ( ! defined( 'ABSPATH' ) ) {
 
 <style>
 
+.product{
+	background: #000;
+}
+
 .text_scena_description{
 	position: absolute;
     top: 500px;
