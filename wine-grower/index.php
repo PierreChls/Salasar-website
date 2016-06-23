@@ -148,12 +148,13 @@
                     </section>
                     <section class="col2" style="float:right;">
                     	<h2 style="text-align:right;">Coordonnées</h2>
-                        <p style="text-align:right;">Wine Grower<br/>
-                        00 Rue du Wine Grower<br/>
-                        00 000 Ville<br/>
+                        <p style="text-align:right;">Champagne Charles Clément<br/>
+                        Champagne Charles Clément
+                        33 Rue Saint-Antoine<br/>
+                        10200 Colombé-le-Sec<br/>
                         FRANCE<br/>
                         Mail : <a href="mailto:<?php bloginfo( 'admin_email' ); ?>" style="color:#38393a"><?php bloginfo( 'admin_email' ); ?></a><br/>
-                        Tél : <a href="tel:+33468200462" style="color:#38393a">04 68 20 04 62</a>
+                        Tél : <a href="tel:+33325925070 " style="color:#38393a">03 25 92 50 70 </a>
                         <br clear="all"/></p>
                     </section>
                 </article>
