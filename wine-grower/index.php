@@ -153,7 +153,7 @@
                         00 000 Ville<br/>
                         FRANCE<br/>
                         Mail : <a href="mailto:<?php bloginfo( 'admin_email' ); ?>" style="color:#38393a"><?php bloginfo( 'admin_email' ); ?></a><br/>
-                        Tél : <a href="tel:+33468200462" style="color:#38393a">04 68 20 04 62</a>
+                        Tél : <a href="tel:+33000000000" style="color:#38393a">00 00 00 00 00</a>
                         <br clear="all"/></p>
                     </section>
                 </article>
