@@ -22,12 +22,12 @@ body {
 	outline: none;
 }
 ::-moz-selection {
-    background: #b7a56d;
+    background: #db7006;
     text-shadow: none;
 }
 
 ::selection {
-    background: #b7a56d;
+    background: #db7006;
     text-shadow: none;
 }
 hr {
@@ -221,7 +221,7 @@ a {
 	position: relative;
 	top: 24px;
 	padding: 5px;
-	background-color: #b7a56d;
+	background-color: #db7006;
 	color: #fff;
 	text-transform: uppercase;
 	-moz-transition: .5s ease-out;
@@ -427,7 +427,7 @@ nav a#cg {
 	height: 31px;
 }
 nav a:hover {
-    color: #b7a56d;
+    color: #db7006;
     text-decoration: none;
 }
 .main {
@@ -435,7 +435,7 @@ nav a:hover {
 }
 h2 {
 	text-transform: uppercase;
-	color: #b7a56d;
+	color: #db7006;
 	text-align: left;
 	font-weight: 700;
 	font-size: 1.2em;
@@ -446,7 +446,7 @@ h3 {
 	text-align: left;
 	font-weight: 500;	
 	padding: 1%;
-	color: #b7a56d;
+	color: #db7006;
 	margin-bottom: -10px;
 }
 table {
@@ -493,7 +493,7 @@ input, textarea {
 	box-shadow: none;
 }
 input:focus, textarea:focus {
-	border: 2px solid #b7a56d;
+	border: 2px solid #db7006;
 }
 textarea {
 	width: 85%;
@@ -504,7 +504,7 @@ textarea {
 }
 input.bouton {
 	border: none;
-	background-color: #b7a56d;
+	background-color: #db7006;
 	color: white;
 	font-size: 16.5px;
 	padding: 8px 0;
