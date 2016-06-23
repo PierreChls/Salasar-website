@@ -123,7 +123,7 @@
          
          <div id="map-canvas">
          
-         <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDQj19bhjOYQec1_CBi_Hp638fLO23QBfY&sensor=false"></script>
+         <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBe4_IjZbRSzMm-UYk6DZliVjsArwWujvI&sensor=false"></script>
          <script src="<?php bloginfo('template_directory'); ?>/js/home-script.js"></script>
 		</div>
          
@@ -151,7 +151,7 @@
                         <p style="text-align:right;">Maison SALASAR<br/>
                         11 260 Campagne Sur Aude<br/>
                         FRANCE<br/>
-                        Mail : <a href="mailto:<?php bloginfo( 'admin_email' ); ?>" style="color:#38393a"><?php bloginfo( 'admin_email' ); ?></a><br/>
+                        Mail : <a href="mailto:contact@salasar.fr" style="color:#38393a">contact@salasar.fr</a><br/>
                         Tél : <a href="tel:+33468200462" style="color:#38393a">04 68 20 04 62</a>
                         <br clear="all"/></p>
                     </section>

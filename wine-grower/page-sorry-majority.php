@@ -49,7 +49,7 @@
 	<body>
 		<div id="majority">
 			<h1>Désolé, en raison de votre âge,<br/> vous ne pouvez accéder au site Salasar</h1>
-			 <img src="<?php bloginfo('template_directory'); ?>/images/logo.png"/>
+			 <img src="<?php bloginfo('template_directory'); ?>/images/logo-or.png"/>
 			 <p>Pour accéder au site, vous devez avoir l'âge légal pour acheter ou consommer de l'alcool dans votre pays de résidence.</p>
 		</div>
 	</body>
