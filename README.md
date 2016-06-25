@@ -47,13 +47,62 @@
     - Content : 
 
 ```html
-<div id="background_section_image"><img src="YOUR_IMAGE.jpg" alt="bg_histoire" width="800" height="894" class="alignnone size-full wp-image-144" /></div>
+<div id="background_section_image">
+    <img src="YOUR_IMAGE.jpg"/>
+</div>
 <div id="text">
-<h1>Histoire</h1>
-<div class="pag_1">Your text</div>
-<div class="pag_2">Your text</div>
+    <h1>Histoire</h1>
+    <div class="pag_1">Some text</div>
+    <div class="pag_2">Some text</div>
 </div>
 ```
+
+- Terroir page
+    - Name : Le terroir
+    - URL : *http://your-website-url/terroir/*
+    - Content : 
+
+```html
+<div id="background_section_image">
+    <img src="YOUR_IMAGE.jpg"/>
+</div>
+<div id="text">
+    <h1 style="text-align: center;">Le terroir</h1>
+    <p style="text-align: center;"><img src="YOUR_LOGO.jpg"/></p>
+    <div class="pag_1">Some text</div>
+    <div class="pag_2">Some text</div>
+</div>
+```
+
+- Photo gallery page
+    - Name : Phototèque
+    - URL : *http://your-website-url/phototeque/*
+    - Content : your Wordpress photo gallery
+        
+- Majority page
+    - Name : Majorité
+    - URL : *http://your-website-url/majority/*
+    - Content : none
+
+- Sorry majority page
+    - Name : Désolé, vous n'êtes pas majeur
+    - URL : *http://your-website-url/sorry-majority/*
+    - Content : none
+    
+- International fee schedule page
+    - Name : Grille tarifaire international
+    - URL : *http://your-website-url/grille-tarifaire-international/*
+    - Content : your international fee schedule
+
+- Terms and conditions page
+    - Name : Mentions légales
+    - URL : *http://your-website-url/mentions-legales/*
+    - Content : your terms and conditions
+
+- General conditions of sale page
+    - Name : Conditions Générales de Vente
+    - URL : *http://your-website-url/conditions-generales-de-vente/*
+    - Content : your general conditions of sale
 
 #### Add some product
 
