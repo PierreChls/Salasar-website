@@ -104,7 +104,11 @@
     - URL : *http://your-website-url/conditions-generales-de-vente/*
     - Content : your general conditions of sale
 
-#### Add some product
+#### Add some product categories
+
+- **Go** to `Product > Categories` in your WordPress admin interface
+
+#### Add some products
 
 #### Add some article categories
 
