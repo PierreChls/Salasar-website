@@ -49,7 +49,7 @@
 	<body>
 
 		<div id="majority">
-			 <h1>Bienvenue sur le site de Wine Grower</h1>
+			 <h1>Bienvenue sur le site de <?php bloginfo('name'); ?></h1>
 			 <img src="<?php bloginfo('template_directory'); ?>/images/logo-or.png"/>
 			 <p>Avez-vous l'âge légal pour acheter ou consommer de l'alcool dans votre pays de résidence ?</p>
 				 
