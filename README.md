@@ -30,10 +30,30 @@
     - download your langage from the [langage pack](https://translate.wordpress.org/projects/wp-plugins/woocommerce/language-packs)
     - add downloaded files into WooCommerce plugin folder
     
+- **Check** if pages created by WooCommerce have these URLs
+    - Checkout : *http://your-website-url/commande/*
+    - Cart : *http://your-website-url/panier/*
+    - My account : *http://your-website-url/mon-compte/*
+    - Shop : *http://your-website-url/boutique/*
+    
  
 ### Create content
 
 #### Add some pages
+
+- History page
+    - Name : Histoire
+    - URL : *http://your-website-url/histoire/*
+    - Content : 
+
+```html
+<div id="background_section_image"><img src="YOUR_IMAGE.jpg" alt="bg_histoire" width="800" height="894" class="alignnone size-full wp-image-144" /></div>
+<div id="text">
+<h1>Histoire</h1>
+<div class="pag_1">Your text</div>
+<div class="pag_2">Your text</div>
+</div>
+```
 
 #### Add some product
 
