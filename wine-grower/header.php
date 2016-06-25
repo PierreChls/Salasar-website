@@ -30,6 +30,10 @@
 		<script src="<?php bloginfo('template_directory'); ?>/BxSlider/jquery.bxslider.min.js"></script>
 		<script src="<?php bloginfo('template_directory'); ?>/BxSlider/jquery.bxslider.js"></script>
 		<link href="<?php bloginfo('template_directory'); ?>/BxSlider/jquery.bxslider.css" rel="stylesheet" />
+		
+		<script type="text/javascript">
+			localStorage.setItem('website', '<?php echo get_site_url(); ?>');
+		</script>
     </head>
 
 	<body>
@@ -40,7 +44,6 @@
         <div class="header-container" id="top">
             <header class="wrapper clearfix">
                 <h1 class="title"><a href="<?php echo get_site_url(); ?>/"><span></span></a></h1>
-                <p>Une famille est née de notre terre</p>
             </header>    
         </div>
         <nav id="nav-container">

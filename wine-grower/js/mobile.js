@@ -1,4 +1,4 @@
-var url = window.location.href;
+var url = localStorage.getItem('website');
 
 var isMobile = false; //initiate as false
 // device detection

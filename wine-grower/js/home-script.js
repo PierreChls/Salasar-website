@@ -13,7 +13,7 @@ function initialize() {
 	                "saturation": 36
 	            },
 	            {
-	                "color": "#000000"
+	                "color": "#ffffff"
 	            },
 	            {
 	                "lightness": 40
@@ -46,15 +46,6 @@ function initialize() {
 	    },
 	    {
 	        "featureType": "administrative",
-	        "elementType": "all",
-	        "stylers": [
-	            {
-	                "color": "#d76565"
-	            }
-	        ]
-	    },
-	    {
-	        "featureType": "administrative",
 	        "elementType": "geometry.fill",
 	        "stylers": [
 	            {
@@ -62,6 +53,9 @@ function initialize() {
 	            },
 	            {
 	                "lightness": 20
+	            },
+	            {
+	                "gamma": "1.00"
 	            }
 	        ]
 	    },
@@ -81,111 +75,6 @@ function initialize() {
 	        ]
 	    },
 	    {
-	        "featureType": "administrative",
-	        "elementType": "labels",
-	        "stylers": [
-	            {
-	                "visibility": "off"
-	            }
-	        ]
-	    },
-	    {
-	        "featureType": "administrative",
-	        "elementType": "labels.text",
-	        "stylers": [
-	            {
-	                "color": "#ff6b00"
-	            }
-	        ]
-	    },
-	    {
-	        "featureType": "administrative.country",
-	        "elementType": "all",
-	        "stylers": [
-	            {
-	                "visibility": "simplified"
-	            }
-	        ]
-	    },
-	    {
-	        "featureType": "administrative.country",
-	        "elementType": "geometry",
-	        "stylers": [
-	            {
-	                "visibility": "simplified"
-	            }
-	        ]
-	    },
-	    {
-	        "featureType": "administrative.country",
-	        "elementType": "labels.text",
-	        "stylers": [
-	            {
-	                "visibility": "simplified"
-	            },
-	            {
-	                "color": "#c27171"
-	            }
-	        ]
-	    },
-	    {
-	        "featureType": "administrative.province",
-	        "elementType": "all",
-	        "stylers": [
-	            {
-	                "visibility": "off"
-	            }
-	        ]
-	    },
-	    {
-	        "featureType": "administrative.locality",
-	        "elementType": "all",
-	        "stylers": [
-	            {
-	                "visibility": "simplified"
-	            },
-	            {
-	                "saturation": "98"
-	            },
-	            {
-	                "lightness": "30"
-	            }
-	        ]
-	    },
-	    {
-	        "featureType": "administrative.neighborhood",
-	        "elementType": "all",
-	        "stylers": [
-	            {
-	                "visibility": "off"
-	            }
-	        ]
-	    },
-	    {
-	        "featureType": "administrative.land_parcel",
-	        "elementType": "all",
-	        "stylers": [
-	            {
-	                "visibility": "off"
-	            }
-	        ]
-	    },
-	    {
-	        "featureType": "landscape",
-	        "elementType": "all",
-	        "stylers": [
-	            {
-	                "visibility": "simplified"
-	            },
-	            {
-	                "gamma": "0.00"
-	            },
-	            {
-	                "lightness": "74"
-	            }
-	        ]
-	    },
-	    {
 	        "featureType": "landscape",
 	        "elementType": "geometry",
 	        "stylers": [
@@ -194,24 +83,9 @@ function initialize() {
 	            },
 	            {
 	                "lightness": 20
-	            }
-	        ]
-	    },
-	    {
-	        "featureType": "landscape.man_made",
-	        "elementType": "all",
-	        "stylers": [
+	            },
 	            {
-	                "lightness": "3"
-	            }
-	        ]
-	    },
-	    {
-	        "featureType": "poi",
-	        "elementType": "all",
-	        "stylers": [
-	            {
-	                "visibility": "off"
+	                "gamma": "0.00"
 	            }
 	        ]
 	    },
@@ -224,15 +98,9 @@ function initialize() {
 	            },
 	            {
 	                "lightness": 21
-	            }
-	        ]
-	    },
-	    {
-	        "featureType": "road",
-	        "elementType": "geometry",
-	        "stylers": [
+	            },
 	            {
-	                "visibility": "simplified"
+	                "gamma": "0.00"
 	            }
 	        ]
 	    },
@@ -241,10 +109,13 @@ function initialize() {
 	        "elementType": "geometry.fill",
 	        "stylers": [
 	            {
-	                "color": "#000000"
+	                "color": "#b7a56d"
 	            },
 	            {
 	                "lightness": 17
+	            },
+	            {
+	                "gamma": "0.00"
 	            }
 	        ]
 	    },
@@ -253,13 +124,19 @@ function initialize() {
 	        "elementType": "geometry.stroke",
 	        "stylers": [
 	            {
-	                "color": "#000000"
+	                "color": "#b7a56d"
 	            },
 	            {
 	                "lightness": 29
 	            },
 	            {
-	                "weight": 0.2
+	                "weight": "0.01"
+	            },
+	            {
+	                "saturation": "0"
+	            },
+	            {
+	                "gamma": "0.00"
 	            }
 	        ]
 	    },
@@ -268,7 +145,7 @@ function initialize() {
 	        "elementType": "geometry",
 	        "stylers": [
 	            {
-	                "color": "#000000"
+	                "color": "#b7a56d"
 	            },
 	            {
 	                "lightness": 18
@@ -280,7 +157,7 @@ function initialize() {
 	        "elementType": "geometry",
 	        "stylers": [
 	            {
-	                "color": "#000000"
+	                "color": "#b7a56d"
 	            },
 	            {
 	                "lightness": 16
@@ -308,16 +185,19 @@ function initialize() {
 	            },
 	            {
 	                "lightness": 17
+	            },
+	            {
+	                "gamma": "1.00"
 	            }
 	        ]
 	    }
 	];
 
 	var styledMap = new google.maps.StyledMapType(styles, {name: "Gmap stylée"});
-	var myLatlng = new google.maps.LatLng(43.364889, 2.823096);
+	var myLatlng = new google.maps.LatLng(42.916826, 2.20505);
 	var mapOptions = {
-		center: new google.maps.LatLng(43.364889, 2.823096),
-		zoom: 8,
+		center: new google.maps.LatLng(42.916826, 2.20505),
+		zoom: 12,
 		mapTypeId: google.maps.MapTypeId.ROADMAP,
 		scrollwheel: false
 	};
