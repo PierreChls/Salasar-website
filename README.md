@@ -144,8 +144,10 @@ For each product you add, do not forget to add **product price**, select a **pro
     <div class="slide_scena">
         <p>Some text</p>
         <p>Some text</p>
-        <a id="fiche_technique" href="FICHE_PRODUCT.pdf" target="_blank">Fiche technique</a>\r\n<a href="http://www.your-website-url.com//#tarifs">Commander</a>
-    </div>\r\n</div>
+        <a id="fiche_technique" href="FICHE_PRODUCT.pdf" target="_blank">Fiche technique</a>
+        <a href="http://www.your-website-url.com//#tarifs">Commander</a>
+    </div>
+</div>
 ```
 
 - **Add** content (with scenarisation text description on right) : 
@@ -168,8 +170,10 @@ For each product you add, do not forget to add **product price**, select a **pro
     <div class="slide_scena">
         <p>Some text</p>
         <p>Some text</p>
-        <a id="fiche_technique" href="FICHE_PRODUCT.pdf" target="_blank">Fiche technique</a>\r\n<a href="http://www.your-website-url.com//#tarifs">Commander</a>
-    </div>\r\n</div>
+        <a id="fiche_technique" href="FICHE_PRODUCT.pdf" target="_blank">Fiche technique</a>
+        <a href="http://www.your-website-url.com//#tarifs">Commander</a>
+    </div>
+</div>
 ```
 
 #### Add some article categories
