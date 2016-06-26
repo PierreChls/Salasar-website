@@ -107,7 +107,7 @@
 #### Add some product categories
 
 - **Go** to `Products > Categories` in your WordPress admin interface
-- Add these default categories, but you can add your personal categories :
+- Add these categories, but you can add your personal categories :
     - Bouteille
     - Demi-bouteille
     - Magnum
@@ -124,15 +124,15 @@ For each product you add, do not forget to add **product price**, select a **pro
 - **Add** product price
 - **Select** a product category
 - **Add** a product thumbnail
-- **Add** content (with scenarisation text description on left) : 
+- **Add** content (with scenarisation description text on left) : 
 
 ```html
 <div class="slide_description">
-    <img src="YOUR_IMAGE.png" width="130" height="437" class="photo_cuv alignnone size-full wp-image-111" />
+    <img src="YOUR_IMAGE.png" class="photo_cuv" />
 </div>
 <div class="slide_scena">
-    <img src="YOUR_IMAGE.jpg" width="980" height="736" class="alignnone size-large wp-image-112" />
-    <img src="YOUR_IMAGE.jpg" width="800" height="1000" class="alignnone size-full wp-image-130" />
+    <img src="YOUR_IMAGE.jpg" />
+    <img src="YOUR_IMAGE.jpg" />
 </div>
 <div class="text_scena_description left">
     <h2>Your product title</h2>
@@ -150,15 +150,15 @@ For each product you add, do not forget to add **product price**, select a **pro
 </div>
 ```
 
-- **Add** content (with scenarisation text description on right) : 
+- **Add** content (with scenarisation description text on right) : 
 
 ```html
 <div class="slide_description">
-    <img src="YOUR_IMAGE.png" width="130" height="437" class="photo_cuv alignnone size-full wp-image-111" />
+    <img src="YOUR_IMAGE.png" class="photo_cuv" />
 </div>
 <div class="slide_scena">
-    <img src="YOUR_IMAGE.jpg" width="980" height="736" class="alignnone size-large wp-image-112" />
-    <img src="YOUR_IMAGE.jpg" width="800" height="1000" class="alignnone size-full wp-image-130" />
+    <img src="YOUR_IMAGE.jpg" />
+    <img src="YOUR_IMAGE.jpg" />
 </div>
 <div class="text_scena_description right">
     <h2>Your product title</h2>
@@ -178,8 +178,42 @@ For each product you add, do not forget to add **product price**, select a **pro
 
 #### Add some article categories
 
+- **Go** to `Posts > Categories` in your WordPress admin interface
+- Add blog category (to post some news on the blog page) :
+    - Name : *Blog*
+    - Slug : *blog*
+- Add promotion code category (to display the scenarisation code promo on the homepage) :
+    - Name : *Code Promo*
+    - Slug : *code-promo*
+
 #### Add some articles   
 
+- **Go** to `Posts > Add` in your WordPress admin interface
+- Add your promotion code post
+    - Title : *Code Promo*
+    - Category : *Code Promo*
+    - Content : 
+
+```html    
+<img id="code_promo_desktop" src="YOUR_IMAGE.jpg" />
+<img id="code_promo_mobile" src="YOUR_IMAGE.jpg" />
+```
+
+- Add your first blog post
+    - Title : *Bienvenue sur le nouveau site de Wine Grower*
+    - Category : *Blog*
+    - Content : 
+
+```html    
+<p>Nous sommes heureux de vous présenter notre nouveau site e-commerce Wine Grower.</p>
+<h2>Un outil adapté aux vignerons</h2>
+<img src="SLIDER_SCREENSHOT.png" />
+<p>À l'aide de notre slider de produits, vous pouvez visionner l'ensemble de nos produits et y trouver des informations techniques. Vous y trouverez aussi des fiches techniques permettant de vous aider à les déguster. Le formulaire de commande a été pensé pour vous faciliter la commande, comme sur un papier, il vous suffit de rentrer le nombre de bouteille que vous désirez.</p>
+<h2>Une solution de paiement sécurisée</h2>
+<img src="E_TRANSACTIONS_ICON.png"/>
+<p>Un paiement en ligne sécurisé via la technologie E-transaction de la banque Crédit Agricole. Vous pourrez payer avec votre carte bancaire en toute sécurité.</p>
+<p>Des possibilités de paiement par chèque et par virement bancaire sont aussi disponibles.</p>
+```
     
 ## Prior installation
 
