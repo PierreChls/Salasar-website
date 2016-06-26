@@ -43,7 +43,7 @@
 
 - History page
     - Name : Histoire
-    - URL : *http://www.your-website-url/histoire/*
+    - URL : *http://your-website-url/histoire/*
     - Content : 
 
 ```html
@@ -59,7 +59,7 @@
 
 - Terroir page
     - Name : Le terroir
-    - URL : *http://www.your-website-url/terroir/*
+    - URL : *http://your-website-url/terroir/*
     - Content : 
 
 ```html
@@ -76,7 +76,7 @@
 
 - Photo gallery page
     - Name : Phototèque
-    - URL : *http://www.your-website-url/phototeque/*
+    - URL : *http://your-website-url/phototeque/*
     - Content : your Wordpress photo gallery
         
 - Majority page
@@ -86,22 +86,22 @@
 
 - Sorry majority page
     - Name : Désolé, vous n'êtes pas majeur
-    - URL : *http://www.your-website-url/sorry-majority/*
+    - URL : *http://your-website-url/sorry-majority/*
     - Content : none
     
 - International fee schedule page
     - Name : Grille tarifaire international
-    - URL : *http://www.your-website-url/grille-tarifaire-international/*
+    - URL : *http://your-website-url/grille-tarifaire-international/*
     - Content : your international fee schedule
 
 - Terms and conditions page
     - Name : Mentions légales
-    - URL : *http://www.your-website-url/mentions-legales/*
+    - URL : *http://your-website-url/mentions-legales/*
     - Content : your terms and conditions
 
 - General conditions of sale page
     - Name : Conditions Générales de Vente
-    - URL : *http://www.your-website-url/conditions-generales-de-vente/*
+    - URL : *http://your-website-url/conditions-generales-de-vente/*
     - Content : your general conditions of sale
 
 #### Add some product categories
@@ -145,7 +145,7 @@ For each product you add, do not forget to add **product price**, select a **pro
         <p>Some text</p>
         <p>Some text</p>
         <a id="fiche_technique" href="FICHE_PRODUCT.pdf" target="_blank">Fiche technique</a>
-        <a href="http://www.your-website-url.com//#tarifs">Commander</a>
+        <a href="http://your-website-url//#tarifs">Commander</a>
     </div>
 </div>
 ```
@@ -171,7 +171,7 @@ For each product you add, do not forget to add **product price**, select a **pro
         <p>Some text</p>
         <p>Some text</p>
         <a id="fiche_technique" href="FICHE_PRODUCT.pdf" target="_blank">Fiche technique</a>
-        <a href="http://www.your-website-url.com//#tarifs">Commander</a>
+        <a href="http://your-website-url//#tarifs">Commander</a>
     </div>
 </div>
 ```
