@@ -43,7 +43,7 @@
 
 - History page
     - Name : Histoire
-    - URL : *http://your-website-url/histoire/*
+    - URL : *http://www.your-website-url/histoire/*
     - Content : 
 
 ```html
@@ -59,7 +59,7 @@
 
 - Terroir page
     - Name : Le terroir
-    - URL : *http://your-website-url/terroir/*
+    - URL : *http://www.your-website-url/terroir/*
     - Content : 
 
 ```html
@@ -76,7 +76,7 @@
 
 - Photo gallery page
     - Name : Phototèque
-    - URL : *http://your-website-url/phototeque/*
+    - URL : *http://www.your-website-url/phototeque/*
     - Content : your Wordpress photo gallery
         
 - Majority page
@@ -86,29 +86,91 @@
 
 - Sorry majority page
     - Name : Désolé, vous n'êtes pas majeur
-    - URL : *http://your-website-url/sorry-majority/*
+    - URL : *http://www.your-website-url/sorry-majority/*
     - Content : none
     
 - International fee schedule page
     - Name : Grille tarifaire international
-    - URL : *http://your-website-url/grille-tarifaire-international/*
+    - URL : *http://www.your-website-url/grille-tarifaire-international/*
     - Content : your international fee schedule
 
 - Terms and conditions page
     - Name : Mentions légales
-    - URL : *http://your-website-url/mentions-legales/*
+    - URL : *http://www.your-website-url/mentions-legales/*
     - Content : your terms and conditions
 
 - General conditions of sale page
     - Name : Conditions Générales de Vente
-    - URL : *http://your-website-url/conditions-generales-de-vente/*
+    - URL : *http://www.your-website-url/conditions-generales-de-vente/*
     - Content : your general conditions of sale
 
 #### Add some product categories
 
-- **Go** to `Product > Categories` in your WordPress admin interface
+- **Go** to `Products > Categories` in your WordPress admin interface
+- Add these default categories, but you can add your personal categories :
+    - Bouteille
+    - Demi-bouteille
+    - Magnum
+    - Jéroboam
+    - Mathusalem
+    - Ratafia
 
 #### Add some products
+
+For each product you add, do not forget to add **product price**, select a **product category**, and add a **product thumbnail**.
+
+- **Go** to `Products > Add product`
+- **Add** your product title
+- **Add** product price
+- **Select** a product category
+- **Add** a product thumbnail
+- **Add** content (with scenarisation text description on left) : 
+
+```html
+<div class="slide_description">
+    <img src="YOUR_IMAGE.png" width="130" height="437" class="photo_cuv alignnone size-full wp-image-111" />
+</div>
+<div class="slide_scena">
+    <img src="YOUR_IMAGE.jpg" width="980" height="736" class="alignnone size-large wp-image-112" />
+    <img src="YOUR_IMAGE.jpg" width="800" height="1000" class="alignnone size-full wp-image-130" />
+</div>
+<div class="text_scena_description left">
+    <h2>Your product title</h2>
+    <div class="slide_description">
+        <h4>Some text</h4>
+        <p><em>Some text</em></p>
+        <a href="PRODUCT_LINK">Découvrir</a>
+    </div>
+    <div class="slide_scena">
+        <p>Some text</p>
+        <p>Some text</p>
+        <a id="fiche_technique" href="FICHE_PRODUCT.pdf" target="_blank">Fiche technique</a>\r\n<a href="http://www.your-website-url.com//#tarifs">Commander</a>
+    </div>\r\n</div>
+```
+
+- **Add** content (with scenarisation text description on right) : 
+
+```html
+<div class="slide_description">
+    <img src="YOUR_IMAGE.png" width="130" height="437" class="photo_cuv alignnone size-full wp-image-111" />
+</div>
+<div class="slide_scena">
+    <img src="YOUR_IMAGE.jpg" width="980" height="736" class="alignnone size-large wp-image-112" />
+    <img src="YOUR_IMAGE.jpg" width="800" height="1000" class="alignnone size-full wp-image-130" />
+</div>
+<div class="text_scena_description right">
+    <h2>Your product title</h2>
+    <div class="slide_description">
+        <h4>Some text</h4>
+        <p><em>Some text</em></p>
+        <a href="PRODUCT_LINK">Découvrir</a>
+    </div>
+    <div class="slide_scena">
+        <p>Some text</p>
+        <p>Some text</p>
+        <a id="fiche_technique" href="FICHE_PRODUCT.pdf" target="_blank">Fiche technique</a>\r\n<a href="http://www.your-website-url.com//#tarifs">Commander</a>
+    </div>\r\n</div>
+```
 
 #### Add some article categories
 
