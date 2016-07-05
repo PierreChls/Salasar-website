@@ -1,14 +1,16 @@
 [![Version](https://img.shields.io/badge/version-1.0-green.svg)](https://img.shields.io/badge/version-1.1-green.svg) [![Build status](https://img.shields.io/badge/build-passing-green.svg)](https://img.shields.io/badge/build-passing-green.svg) [![CMS](https://img.shields.io/badge/CMS-WordPress-lightgrey.svg)](https://img.shields.io/badge/CMS-WordPress-lightgrey.svg) [![eCommerce](https://img.shields.io/badge/E%20Commerce%20solution-WooCommerce-lightgrey.svg)](https://img.shields.io/badge/E%20Commerce%20solution-WooCommerce-lightgrey.svg)
 
-# Wine Grower template - *Salasar*
+# Wine Grower - *Salasar*
 
 ![preview](https://raw.githubusercontent.com/PierreChls/wine-grower-template/template-salasar/wine-grower/images/preview.png)
+
+> Wine Grower is a e-commerce website template for WordPress and WooCommerce
 
 ## How to use it
 
 ### Clone the project
 
-    git clone https://github.com/PierreChls/wine-grower-template.git
+    git clone https://github.com/PierreChls/Wine-Grower.git
     
 ### Add theme to your WordPress
 
