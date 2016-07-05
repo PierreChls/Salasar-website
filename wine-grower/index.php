@@ -123,7 +123,7 @@
          
          <div id="map-canvas">
          
-         <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBe4_IjZbRSzMm-UYk6DZliVjsArwWujvI&sensor=false"></script>
+         <script type="text/javascript" src="http://maps.google.com/maps/api/js?sensor=true"></script>
          <script src="<?php bloginfo('template_directory'); ?>/js/home-script.js"></script>
 		</div>
          
