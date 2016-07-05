@@ -4,12 +4,13 @@
 
 ![preview](https://raw.githubusercontent.com/PierreChls/wine-grower-template/template-cailhol-gautran/wine-grower/images/preview.png)
 
+> Wine Grower is a e-commerce website template for WordPress and WooCommerce
 
 ## How to use it
 
 ### Clone the project
 
-    git clone https://github.com/PierreChls/wine-grower-template.git
+    git clone https://github.com/PierreChls/Wine-Grower.git
     
 ### Add theme to your WordPress
 
