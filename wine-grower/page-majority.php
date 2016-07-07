@@ -56,7 +56,7 @@
 
 		<div id="majority">
 			 <h1>Bienvenue sur le site de <?php bloginfo('name'); ?></h1>
-			 <img src="<?php bloginfo('template_directory'); ?>/images/logo-or.png"/>
+			 <img src="<?php bloginfo('template_directory'); ?>/images/logo.png"/>
 			 <p>Avez-vous l'âge légal pour acheter ou consommer de l'alcool dans votre pays de résidence ?</p>
 				 
 			 <form method="post" onsubmit="redirect_age()" action="<?php echo get_site_url(); ?>">
