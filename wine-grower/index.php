@@ -152,7 +152,7 @@
                         Hameau le Cailhol<br/>
                         34 210 Aigyes-Vives<br/>
                         FRANCE<br/>
-                        Mail : <a href="mailto:<?php bloginfo( 'admin_email' ); ?>" style="color:#38393a"><?php bloginfo( 'admin_email' ); ?></a><br/>
+                        Mail : <a href="mailto:gautran@orange.fr" style="color:#38393a">gautran@orange.fr</a><br/>
                         Tél : <a href="tel:+33468912603 " style="color:#38393a">04 68 91 26 03 </a>
                         <br clear="all"/></p>
                     </section>

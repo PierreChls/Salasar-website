@@ -17,6 +17,10 @@ if ( ! defined( 'ABSPATH' ) ) {
 
 <style>
 
+.entry-content{
+	background: #000000;
+}
+
 .text_scena_description{
 	position: absolute;
     top: 500px;
