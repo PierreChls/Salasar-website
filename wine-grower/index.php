@@ -149,8 +149,8 @@
                     <section class="col2" style="float:right;">
                     	<h2 style="text-align:right;">Coordonnées</h2>
                         <p style="text-align:right;">Domaine Cailhol Gautran<br/>
-                        Hameau le Cailhol<br/>
-                        34 210 Aigyes-Vives<br/>
+                        Hameau de Cailhol<br/>
+                        34 210 Aigues-Vives<br/>
                         FRANCE<br/>
                         Mail : <a href="mailto:gautran@orange.fr" style="color:#38393a">gautran@orange.fr</a><br/>
                         Tél : <a href="tel:+33468912603 " style="color:#38393a">04 68 91 26 03 </a>
