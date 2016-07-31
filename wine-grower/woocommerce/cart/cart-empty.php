@@ -40,7 +40,7 @@ header.entry-header{
     display: block;
     margin: auto;
     border: none;
-    background-color: #b7a56d;
+    background-color: #db7006;
     color: white;
     font-size: 16.5px;
     padding: 10px 20px;
@@ -61,7 +61,7 @@ header.entry-header{
 }
 
 .entry-content a:hover {
-    background-color: #b7a56d;
+    background-color: #db7006;
 }
 
 .footer-container{

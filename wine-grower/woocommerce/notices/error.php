@@ -22,7 +22,7 @@ ul.woocommerce-error{
 	padding: 1em;
     text-align: center;
     list-style: none;
-    background-color: #a18e38;
+    background-color: #db7006;
     color: #fff;
     text-transform: uppercase;
     font-size: 1.2em;
