@@ -2,7 +2,6 @@
 
 	if( isset($_POST['id']) && isset($_POST['quant'])){
 		if ( WC()->cart->get_cart_contents_count() == 0 ) {
-	        $woocommerce->cart->add_to_cart(8);
 	        $verif=1;
 		}
 	    $product_id = $_POST['id'];
