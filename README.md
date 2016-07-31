@@ -38,6 +38,10 @@
     - My account : *http://your-website-url/mon-compte/*
     - Shop : *http://your-website-url/boutique/*
     
+### Configure your MAP
+
+- Add your personnal Google Map API key into `index.php` file at line *126*
+- Custome your position and map style into `home-script.js` file in `js` folder 
  
 ### Create content
 
