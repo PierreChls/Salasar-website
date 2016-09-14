@@ -17,7 +17,7 @@
 ### Add them in this current folder
 
 ```
-vids/
+videos/
 ├── .gitignore
 ├── README.md
 ├── wine-grower.mp4
