@@ -1,6 +1,6 @@
 var url = localStorage.getItem('website');
 
-$("div.main-container.nobg.container-video").append("<video controls preload='auto' autoplay='true' loop><source src='" + url + "/wp-content/themes/wine-grower/BigVideo/vids/wine-grower.mp4' type='video/mp4' /><source src='" + url + "/wp-content/themes/wine-grower/BigVideo/vids/wine-grower.webm' type='video/webm' /><source src='" + url + "/wp-content/themes/wine-grower/BigVideo/vids/wine-grower.ogv' type='video/ogg' /></video>");
+$("div.main-container.nobg.container-video").append("<video controls preload='auto' autoplay='true' loop><source src='" + url + "/wp-content/themes/wine-grower/videos/wine-grower.mp4' type='video/mp4' /><source src='" + url + "/wp-content/themes/wine-grower/videos/wine-grower.webm' type='video/webm' /><source src='" + url + "/wp-content/themes/wine-grower/videos/wine-grower.ogv' type='video/ogg' /></video>");
 
 
 function MM_validateForm() { //v4.0
@@ -19,7 +19,7 @@ function MM_validateForm() { //v4.0
 		} if (errors) alert('Merci de corriger la ou les erreurs suivantes : \n'+errors);
 		document.MM_returnValue = (errors == '');
 	} }
-	
+
 function calcul()
 {
 	nb_ligne = this.document.getElementById('nb_ligne').value;
@@ -27,7 +27,7 @@ function calcul()
 	total_equivalence = 0;
 	fdp = 0;
 	for (i=1; i<=nb_ligne; i++)
-	{	
+	{
 		var str = this.document.getElementById('qte_'+i).value;
 		var reg= /^[0-9]*$/;
 		if(!reg.test(str)){
@@ -39,15 +39,15 @@ function calcul()
 			}
 		}
 		total_ligne = this.document.getElementById('qte_'+i).value * this.document.getElementById('prix_'+i).value;
-		this.document.getElementById('total_'+i).value = eval(total_ligne).toFixed(2);							
+		this.document.getElementById('total_'+i).value = eval(total_ligne).toFixed(2);
 		this.document.getElementById('total_aff_'+i).value = eval(total_ligne).toFixed(2)+' €';
 		total = total + total_ligne;
 		total_equivalence = total_equivalence + this.document.getElementById('qte_'+i).value * this.document.getElementById('equivalence_'+i).value;
 	}
-	
+
 	this.document.getElementById('total').value = eval(total).toFixed(2);
 	this.document.getElementById('total_aff').value = eval(total).toFixed(2)+' €';
-	
+
 
 	if(this.document.getElementById('total').value >= 0 && this.document.getElementById('total').value < 360)
 	{
@@ -114,18 +114,18 @@ function calcul()
 		this.document.getElementById('total_fdp_aff').value = 'Livraison gratuite';
 		fdp = 0;
 	}
-	
+
 	this.document.getElementById('total_total').value = eval(total+fdp).toFixed(2);
 	this.document.getElementById('total_total_aff').value = eval(total+fdp).toFixed(2)+' €';
 }
 
-$(function() {	
-	$(document).ready(function () {  
+$(function() {
+	$(document).ready(function () {
 	  var top = $('#nav-container').offset().top - parseFloat($('.header-container').css('marginTop').replace(/auto/, 0));
 	  $(window).scroll(function (event) {
 		// what the y position of the scroll is
 		var y = $(this).scrollTop();
-	  
+
 		// whether that's below the form
 		if (y >= top) {
 		  // if so, ad the fixed class
@@ -140,7 +140,7 @@ $(function() {
 
 $(function() {
 	$('a[href*=#]').click(function() {
-	if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') 
+	if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'')
 		&& location.hostname == this.hostname) {
 			var $target = $(this.hash);
 			var $targetOffset2 = $('#cuvees').offset().top;
@@ -152,29 +152,29 @@ $(function() {
 				}
 				if($target.selector=='#cuvees')
 				{
-					var targetOffset = $target.offset().top - 100; 
+					var targetOffset = $target.offset().top - 100;
 				}
 				if($target.selector=='#tarifs')
 				{
-					var targetOffset = $target.offset().top - 100; 
+					var targetOffset = $target.offset().top - 100;
 				}
 				if($target.selector=='#actualites')
 				{
-					var targetOffset = $target.offset().top - 100; 
+					var targetOffset = $target.offset().top - 100;
 				}
 				if($target.selector=='#contact')
 				{
-					var targetOffset = $target.offset().top - 100; 
+					var targetOffset = $target.offset().top - 100;
 				}
 				if($target.selector=='#carousel-1-0-slide0' || $target.selector=='#carousel-1-0-slide1' || $target.selector=='#carousel-1-0-slide2'
 				|| $target.selector=='#carousel-1-0-slide3' || $target.selector=='#carousel-1-0-slide4' || $target.selector=='#carousel-1-0-slide5'
 				|| $target.selector=='#carousel-1-0-slide6')
 				{
-					var targetOffset = $targetOffset2 - 170; 
-				}				
+					var targetOffset = $targetOffset2 - 170;
+				}
 				if($target.selector=='#top')
 				{
-					var targetOffset = 0; 
+					var targetOffset = 0;
 				}
 				$('html,body').animate({scrollTop: targetOffset}, 1000);
 				return false;
@@ -204,7 +204,7 @@ function launchAjax(table){
 	        });
 	}
 }
-	      
+
 
 function allocate_table(product_id, quantity){
     this.product_id = product_id;
@@ -223,14 +223,14 @@ function send_form_cuv(){
 	   		if(champs[i].getAttribute("class") === "cuv_num"){
 		   		var product_id = champs[i].getAttribute("value");
 		   		//alert(product_id);
-		   		
+
 		   		var input_quantity = champs[i].getElementsByTagName("input");
 		   		for(var j=0, t=input_quantity.length; j<t; j++) {
 		   			if(input_quantity[j].getAttribute("class") === "quantity"){
 		   				var quantity = input_quantity[j].value;
 		   			}
 		   		}
-		   		
+
 		   		if(parseInt(quantity)==quantity && quantity!=0 && quantity!="null"){
 			   		table[cpt] = new allocate_table(product_id, quantity);
 			   		cpt++;
@@ -252,7 +252,7 @@ function send_form_cuv(){
       url: 'index.php', // form action url
       type: 'POST', // form submit method get/post
       dataType: 'html', // request type html/json/xml
-      data: form.serialize(), // serialize form data 
+      data: form.serialize(), // serialize form data
       beforeSend: function() {
       },
       success: function(data) {
@@ -274,7 +274,7 @@ function preventDefault(e) {
   e = e || window.event;
   if (e.preventDefault)
       e.preventDefault();
-  e.returnValue = false;  
+  e.returnValue = false;
 }
 
 function preventDefaultForScrollKeys(e) {
@@ -296,10 +296,10 @@ function disableScroll() {
 function enableScroll() {
     if (window.removeEventListener)
         window.removeEventListener('DOMMouseScroll', preventDefault, false);
-    window.onmousewheel = document.onmousewheel = null; 
-    window.onwheel = null; 
-    window.ontouchmove = null;  
-    document.onkeydown = null;  
+    window.onmousewheel = document.onmousewheel = null;
+    window.onwheel = null;
+    window.ontouchmove = null;
+    document.onkeydown = null;
 }
 
 $("#open_menu").click(function(){
