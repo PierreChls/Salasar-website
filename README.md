@@ -1,8 +1,8 @@
 [![Version](https://img.shields.io/badge/version-1.0-green.svg)](https://img.shields.io/badge/version-1.1-green.svg) [![Build status](https://img.shields.io/badge/build-passing-green.svg)](https://img.shields.io/badge/build-passing-green.svg) [![CMS](https://img.shields.io/badge/CMS-WordPress-lightgrey.svg)](https://img.shields.io/badge/CMS-WordPress-lightgrey.svg) [![eCommerce](https://img.shields.io/badge/E%20Commerce%20solution-WooCommerce-lightgrey.svg)](https://img.shields.io/badge/E%20Commerce%20solution-WooCommerce-lightgrey.svg)
 
-# Wine Grower
+# Wine Grower - *Giso*
 
-![preview](https://raw.githubusercontent.com/PierreChls/wine-grower-template/master/wine-grower/images/preview.png)
+![preview](https://raw.githubusercontent.com/PierreChls/wine-grower-template/template-giso/wine-grower/images/preview.png)
 
 > Wine Grower is a template for WordPress using WooCommerce e-commerce plugin
 
@@ -37,11 +37,11 @@
     - Cart : *http://your-website-url/panier/*
     - My account : *http://your-website-url/mon-compte/*
     - Shop : *http://your-website-url/boutique/*
-    
+
 ### Configure your map
 
 - Add your personnal Google Map API key into `index.php` file at line *126*
-- Custome your position and map style into `home-script.js` file in `js` folder 
+- Custome your position and map style into `home-script.js` file in `js` folder    
  
 ### Create content
 
