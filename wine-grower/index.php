@@ -39,10 +39,17 @@
 				            $loop = new WP_Query( $args );
 				            while ( $loop->have_posts() ) : $loop->the_post(); global $product;
 				        ?>
-			        
+				        
+				        	<?php if($product->post->post_name != 'financement-participatif') {?>
+
 			        	<div class="slide">
                           <?php the_content(); ?>
+                          <div class="add-to-cart">
+                          	<p>Prix : <?php echo $product->get_price(); ?>€</p>
+						  	<a href="<?php echo get_site_url(); ?>/panier/?add-to-cart=<?php the_ID(); ?>">Ajouter au panier</a>
+                          </div>
 						</div>
+						<?php } ?>
 						
 						<?php endwhile; ?>
 						<?php wp_reset_query(); ?>
@@ -50,6 +57,9 @@
 		        </div>
             </article>
         </div>
+        
+        <!-- 
+        
          <div class="main-container">
             <div class="main wrapper clearfix">
                 <article id="tarifs">
@@ -119,11 +129,13 @@
             </div> 
         </div>   
         
+        -->
+        
          <div class="main-container">
          
          <div id="map-canvas">
          
-         <script type="text/javascript" src="http://maps.google.com/maps/api/js?HERE-YOUR-API-KEY&sensor=true"></script>
+         <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDQj19bhjOYQec1_CBi_Hp638fLO23QBfY&sensor=false"></script>
          <script src="<?php bloginfo('template_directory'); ?>/js/home-script.js"></script>
 		</div>
          
@@ -148,13 +160,12 @@
                     </section>
                     <section class="col2" style="float:right;">
                     	<h2 style="text-align:right;">Coordonnées</h2>
-                        <p style="text-align:right;">Wine Grower<br/>
-                        00 Rue du Wine Grower<br/>
-                        00 000 Ville<br/>
-                        FRANCE<br/>
-                        Mail : <a href="mailto:<?php bloginfo( 'admin_email' ); ?>" style="color:#38393a"><?php bloginfo( 'admin_email' ); ?></a><br/>
-                        Tél : <a href="tel:+33000000000" style="color:#38393a">00 00 00 00 00</a>
-                        <br clear="all"/></p>
+                        <p style="text-align:right;">Henri Perilhou Vigneron<br/>
+                        11260 Campagne Sur Aude<br/>
+						FRANCE<br/>
+						Mail : <a href="mailto:henrip009@gmail.com" style="color:#38393a">henrip009@gmail.com</a><br>
+						Tél : <a href="tel:+33695868738" style="color:#38393a">06 95 86 87 38</a>
+						<br clear="all"></p>
                     </section>
                 </article>
             </div> 

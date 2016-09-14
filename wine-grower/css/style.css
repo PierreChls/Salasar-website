@@ -145,6 +145,25 @@ a {
 }
 
 
+.slide .add-to-cart{
+	margin-top: 50px;
+}
+
+.slide .add-to-cart p{
+	text-transform: uppercase;
+	font-size: 14px;
+}
+
+.slide .add-to-cart a{
+	padding: 10px;
+	font-size: 12px;
+    background: none;
+    text-transform: uppercase;
+    color: #38393a;
+    border: 1px solid #38393a;
+    border-radius: 0;
+}
+
 
 .slide_scena a#fiche_technique:after{
 	content: '';
@@ -187,8 +206,6 @@ a {
 }
 .photo_cuv {
 	float: left;
-	width: auto;
-	height: auto;
 	margin-right: 5%;
 	margin-left: 5%;
 	position: relative;
@@ -796,8 +813,11 @@ p.tot input {
 	.wrapper {
 		width: 100%;
 	}
+	.main{
+		width: 960px !important;
+	}
 	nav li {
-		width: 12%;
+		width: 11%;
 	}
 	nav #li_cg {
 		width: 75px;
@@ -865,7 +885,7 @@ p.tot input {
 @media only screen and (min-width: 1024px) {
 
     .wrapper {
-        width: 960px; 
+        width: 100%; 
         margin: 0 auto;
 		top: -30px;
     }

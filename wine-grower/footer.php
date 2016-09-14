@@ -99,12 +99,12 @@
 					<li><a class="close_menu" href="<?php echo get_site_url(); ?>/histoire/">Histoire</a></li>
 	                <li><a class="close_menu" href="<?php echo get_site_url(); ?>/terroir/">Le terroir</a></li>
 	                <li><a class="close_menu" href="<?php echo get_site_url(); ?>/#cuvees">Nos cuvées</a></li>
-	                <li><a class="close_menu" href="<?php echo get_site_url(); ?>/#tarifs">Nos tarifs</a></li>
 	                <li><a class="close_menu" href="<?php echo get_site_url(); ?>/phototeque/">Phototèque</a></li>
-	                <li><a class="close_menu" href="<?php echo get_site_url(); ?>/blog/">Blog</a></li>
+	                <li><a class="close_menu" href="<?php echo get_site_url(); ?>/blog/">Actualités</a></li>
+	                <li><a class="close_menu" href="<?php echo get_site_url(); ?>/financement-participatif/">Parrainage</a></li>
 	                <li><a class="close_menu" href="<?php echo get_site_url(); ?>/#contact">Contact</a></li>
-	                <li><a href="<?php echo get_site_url(); ?>/mon-compte/"><img src="<?php bloginfo('template_directory'); ?>/images/menu/account.svg"/></a></li>
-	                <li><a class="close_menu" href="<?php echo get_site_url(); ?>/panier/"><img src="<?php bloginfo('template_directory'); ?>/images/menu/cart.svg"/></a></li>
+	                <li><a href="<?php echo get_site_url(); ?>/my-account/"><img src="<?php bloginfo('template_directory'); ?>/images/menu/account.svg"/></a></li>
+	                <li><a class="close_menu" href="<?php echo get_site_url(); ?>/cart/"><img src="<?php bloginfo('template_directory'); ?>/images/menu/cart.svg"/></a></li>
 				</ul>
 				<div id="close_menu" class="action" data-dialog-close><img src="<?php bloginfo('template_directory'); ?>/images/menu/close.svg" /></div>
 			</div>
