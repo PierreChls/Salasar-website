@@ -10,7 +10,7 @@
 	    <meta property="og:image" content="<?php echo get_site_url(); ?>/images/og-image.png" />
 	    <meta property="og:site_name" content="<?php bloginfo('name'); ?>" />
 	    <meta property="og:description" content="<?php bloginfo('description'); ?>" />
-			
+
 	    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0"/>
 		<link rel="shortcut icon" href="<?php bloginfo('template_directory'); ?>/images/favicon.ico" type="image/x-icon">
 		<link rel="shortcut icon" href="<?php bloginfo('template_directory'); ?>/images/favicon.png" type="image/png">
@@ -18,33 +18,33 @@
 	    <link rel="stylesheet" href="<?php bloginfo('template_directory'); ?>/css/style.css">
 	    <link rel="stylesheet" href="<?php bloginfo('template_directory'); ?>/css/home-style.css">
 	    <link rel="stylesheet" href="<?php bloginfo('template_directory'); ?>/css/supersized.css">
-			
+
 		<link rel="stylesheet" href="<?php bloginfo('template_directory'); ?>/css/style_video.css">
-	    <link rel="stylesheet" href="<?php bloginfo('template_directory'); ?>/css/bower_components/BigVideo/css/bigvideo.css">
-	        
+	    <link rel="stylesheet" href="<?php bloginfo('template_directory'); ?>/css/bigvideo.css">
+
 	    <link rel="stylesheet" href="<?php bloginfo('template_directory'); ?>/lightbox/css/lightbox.css">
-	
+
 	    <script src="<?php bloginfo('template_directory'); ?>/js/vendor/modernizr-2.6.2-respond-1.1.0.min.js"></script>
-	        
+
 	    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
-		<script src="<?php bloginfo('template_directory'); ?>/BxSlider/jquery.bxslider.min.js"></script>
-		<script src="<?php bloginfo('template_directory'); ?>/BxSlider/jquery.bxslider.js"></script>
-		<link href="<?php bloginfo('template_directory'); ?>/BxSlider/jquery.bxslider.css" rel="stylesheet" />
-		
+		<script src="<?php bloginfo('template_directory'); ?>/slider/jquery.bxslider.min.js"></script>
+		<script src="<?php bloginfo('template_directory'); ?>/slider/jquery.bxslider.js"></script>
+		<link href="<?php bloginfo('template_directory'); ?>/slider/jquery.bxslider.css" rel="stylesheet" />
+
 		<script type="text/javascript">
 			localStorage.setItem('website', '<?php echo get_site_url(); ?>');
 		</script>
     </head>
 
 	<body>
-    	
+
         <!--[if lt IE 8]>
              <p class="chromeframe">Vous utilisez un navigateur obsolète. <a href="http://browsehappy.ch/fr/">Mettez à jour votre navigateur</a> ou <a href="http://www.google.com/chromeframe/?redirect=true">installez Google Chrome Frame</a> pour une meilleure expérience de ce site.</p>
         <![endif]-->
         <div class="header-container" id="top">
             <header class="wrapper clearfix">
                 <h1 class="title"><a href="<?php echo get_site_url(); ?>/"><span></span></a></h1>
-            </header>    
+            </header>
         </div>
         <nav id="nav-container">
             <ul class="wrapper clearfix menu_complete">
