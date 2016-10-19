@@ -194,9 +194,9 @@ function initialize() {
 	];
 
 	var styledMap = new google.maps.StyledMapType(styles, {name: "Gmap stylée"});
-	var myLatlng = new google.maps.LatLng(42.916826, 2.20505);
+	var myLatlng = new google.maps.LatLng(43.085800, 2.226390);
 	var mapOptions = {
-		center: new google.maps.LatLng(42.916826, 2.20505),
+		center: new google.maps.LatLng(43.085800, 2.226390),
 		zoom: 12,
 		mapTypeId: google.maps.MapTypeId.ROADMAP,
 		scrollwheel: false

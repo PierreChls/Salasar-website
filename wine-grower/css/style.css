@@ -393,6 +393,7 @@ section {
 .dialog__content ul li a{
 	color:#fff;
 	font-size: 6vh;
+	line-height: 1em;
 	font-family: 'Futura';
 	font-style: normal;
 }
@@ -440,7 +441,13 @@ nav a {
     padding: 15px 0;
     text-align: center;
     color: #fff;
+    font-weight: 600;
 }
+
+nav a.big {
+	color: #ff0000; 
+}
+
 nav a#cg {
 	width: 31px;
 	height: 31px;
@@ -817,7 +824,10 @@ p.tot input {
 		width: 960px !important;
 	}
 	nav li {
-		width: 11%;
+		width: 12.5%;
+	}
+	nav li a.big{
+		padding: 7px 3px;
 	}
 	nav #li_cg {
 		width: 75px;

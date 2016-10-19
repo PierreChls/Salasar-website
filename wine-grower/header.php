@@ -26,7 +26,7 @@
 
 	    <script src="<?php bloginfo('template_directory'); ?>/js/vendor/modernizr-2.6.2-respond-1.1.0.min.js"></script>
 
-	    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
+	    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8/jquery.min.js"></script>
 		<script src="<?php bloginfo('template_directory'); ?>/slider/jquery.bxslider.min.js"></script>
 		<script src="<?php bloginfo('template_directory'); ?>/slider/jquery.bxslider.js"></script>
 		<link href="<?php bloginfo('template_directory'); ?>/slider/jquery.bxslider.css" rel="stylesheet" />
@@ -51,12 +51,11 @@
                 <li><a href="<?php echo get_site_url(); ?>/histoire/">Histoire</a></li>
                 <li><a href="<?php echo get_site_url(); ?>/terroir/">Le terroir</a></li>
                 <li><a href="<?php echo get_site_url(); ?>/#cuvees">Nos cuvées</a></li>
+                <li><a class="big" href="<?php echo get_site_url(); ?>/partenaires-distributeurs/">Partenaires<br/>distributeurs</a></li>
+                <li><a class="big" href="<?php echo get_site_url(); ?>/operations-speciales/">Opérations<br/>spéciales</a></li>
                 <li><a href="<?php echo get_site_url(); ?>/phototeque/">Phototèque</a></li>
                 <li><a href="<?php echo get_site_url(); ?>/blog/">Actualités</a></li>
-                <li><a href="<?php echo get_site_url(); ?>/financement-participatif/">Parrainage</a></li>
                 <li><a href="<?php echo get_site_url(); ?>/#contact">Contact</a></li>
-                <li style="width:10%;"><a href="<?php echo get_site_url(); ?>/mon-compte/"><img src="<?php bloginfo('template_directory'); ?>/images/menu/account.svg" style="width: 15px; height: 15px; margin-right:10px;" />Compte</a></li>
-                <li style="width:10%;"><a href="<?php echo get_site_url(); ?>/panier/"><img src="<?php bloginfo('template_directory'); ?>/images/menu/cart.svg" style="width: 15px; height: 15px; margin-right:10px;" />Panier</a></li>
             </ul>
             <ul class="wrapper clearfix menu_responsive">
             	<li id="open_menu" data-dialog="somedialog" style="width: 100%; cursor:pointer;"><img src="<?php bloginfo('template_directory'); ?>/images/menu/menu.svg" style="width: auto; height: 100%;" /></li>

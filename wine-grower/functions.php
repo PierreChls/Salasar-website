@@ -34,7 +34,3 @@ require get_template_directory() . '/inc/init.php';
             }
         }
     }
- 
- /*
- * goes in theme functions.php or a custom plugin
- **/

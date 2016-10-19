@@ -45,8 +45,8 @@
 			        	<div class="slide">
                           <?php the_content(); ?>
                           <div class="add-to-cart">
-                          	<p>Prix : <?php echo $product->get_price(); ?>€</p>
-						  	<a href="<?php echo get_site_url(); ?>/panier/?add-to-cart=<?php the_ID(); ?>">Ajouter au panier</a>
+                          	<p><strong>Prix public conseillé :</strong><br/><?php echo $product->get_price(); ?>€ TTC</p>
+						  	<!--<a href="<?php echo get_site_url(); ?>/panier/?add-to-cart=<?php the_ID(); ?>">Ajouter au panier</a>-->
                           </div>
 						</div>
 						<?php } ?>
@@ -160,8 +160,10 @@
                     </section>
                     <section class="col2" style="float:right;">
                     	<h2 style="text-align:right;">Coordonnées</h2>
-                        <p style="text-align:right;">Henri Perilhou Vigneron<br/>
-                        11260 Campagne Sur Aude<br/>
+                        <p style="text-align:right;">Valor Vignes SAS<br/>
+                        CD 118<br/>
+                        ZAC Charles Cros<br/>
+						11300 PIEUSSE<br/>
 						FRANCE<br/>
 						Mail : <a href="mailto:henrip009@gmail.com" style="color:#38393a">henrip009@gmail.com</a><br>
 						Tél : <a href="tel:+33695868738" style="color:#38393a">06 95 86 87 38</a>
