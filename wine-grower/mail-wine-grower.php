@@ -3,7 +3,7 @@
 	if($_POST["Envoyer"]==""){
 		if(!empty($_POST['nom_c']) && !empty($_POST['email_c']) && !empty($_POST['message_c'])){
 			
-			$mailDestinataire= get_bloginfo('admin_email');
+			$mailDestinataire= "henrip009@gmail.com";
 			$titleWebsite = get_bloginfo('name');
 			$themeURL = get_bloginfo('template_url');
 			
