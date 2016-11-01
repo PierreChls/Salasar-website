@@ -7,7 +7,7 @@
 	    <meta name="description" content="<?php bloginfo('description'); ?>">
 	    <meta name="author" content="<?php bloginfo('name'); ?>" />
 	    <meta property="og:url" content="<?php echo get_site_url(); ?>/" />
-	    <meta property="og:image" content="<?php echo get_site_url(); ?>/images/og-image.png" />
+	    <meta property="og:image" content="<?php bloginfo('template_directory'); ?>/images/og-image.png" />
 	    <meta property="og:site_name" content="<?php bloginfo('name'); ?>" />
 	    <meta property="og:description" content="<?php bloginfo('description'); ?>" />
 
@@ -30,7 +30,7 @@
 		<script src="<?php bloginfo('template_directory'); ?>/slider/jquery.bxslider.min.js"></script>
 		<script src="<?php bloginfo('template_directory'); ?>/slider/jquery.bxslider.js"></script>
 		<link href="<?php bloginfo('template_directory'); ?>/slider/jquery.bxslider.css" rel="stylesheet" />
-		
+
 		<script type="text/javascript">
 			localStorage.setItem('website', '<?php echo get_site_url(); ?>');
 		</script>
