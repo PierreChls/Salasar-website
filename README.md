@@ -2,7 +2,7 @@
 
 # Wine Grower - *Cailhol Gautran*
 
-![preview](https://raw.githubusercontent.com/PierreChls/wine-grower-template/template-cailhol-gautran/wine-grower/images/preview.png)
+![preview](https://raw.githubusercontent.com/pierrechls/wine-grower-template/template-cailhol-gautran/wine-grower/images/preview.png)
 
 > Wine Grower is a template for WordPress using WooCommerce e-commerce plugin
 
@@ -10,7 +10,7 @@
 
 ### Clone the project
 
-    git clone https://github.com/PierreChls/Wine-Grower.git
+    git clone https://github.com/pierrechls/wine-grower.git
     
 ### Add theme to your WordPress
 
