@@ -49,14 +49,14 @@ div.cart_totals.calculated_shipping table tbody tr.shipping td a {
 
 <?php do_action( 'woocommerce_before_shipping_calculator' ); ?>
 
-<div id="shipping_info_international">
+<!-- <div id="shipping_info_international">
 	<p>La livraison à l'international n'est pas encore disponible.</p>
 	<p>Seule la livraison en France Métropolitaine est disponible.</p>
 	<p style="display:none;">Pour l'international, vous devez commander un minimum de 6 bouteilles.</p>
 	<p style="display:none;">Vous pouvez consulter notre <a href="<?php echo get_site_url(); ?>grille-tarifaire-international/" target="_blank">grille tarifaire pour l'international</a>.</p>
-</div>
+</div> -->
 
-<form class="woocommerce-shipping-calculator" action="<?php echo esc_url( WC()->cart->get_cart_url() ); ?>" method="post">
+<!-- <form class="woocommerce-shipping-calculator" action="<?php echo esc_url( WC()->cart->get_cart_url() ); ?>" method="post">
 
 	<p style="display:none;"><a href="#" class="shipping-calculator-button"><?php _e( 'Calculate Shipping', 'woocommerce' ); ?></a></p>
 
@@ -125,16 +125,15 @@ div.cart_totals.calculated_shipping table tbody tr.shipping td a {
 
 		<?php wp_nonce_field( 'woocommerce-cart' ); ?>
 	</section>
-</form>
+</form> -->
 
 <?php do_action( 'woocommerce_after_shipping_calculator' ); ?>
 
-<script>
+<!-- <script>
 if ($('tr.shipping').find('span.amount').length) {
     $("#shipping_info_international").css("display", "none");
 }
 if($("select#shipping_method_0").find("option").length){
 	$("#shipping_info_international").css("display", "none");
 }
-</script>
-
+</script> -->

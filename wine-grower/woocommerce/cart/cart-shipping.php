@@ -14,6 +14,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 }
 
 ?>
+
 <tr class="shipping">
 	<th><?php
 		if ( $show_package_details ) {
@@ -56,7 +57,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 
 			<?php if ( is_cart() && get_option( 'woocommerce_enable_shipping_calc' ) === 'yes' ) : ?>
 
-				<p><?php _e( 'Please use the shipping calculator to see available shipping methods.', 'woocommerce' ); ?></p>
+				<p><?php _e( 'Livraison gratuite', 'woocommerce' ); ?></p>
 
 			<?php elseif ( is_cart() ) : ?>
 
