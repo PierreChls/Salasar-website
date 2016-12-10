@@ -49,7 +49,7 @@ function calcul()
 	this.document.getElementById('total_aff').value = eval(total).toFixed(2)+' €';
 
 
-	if(this.document.getElementById('total').value >= 0 && this.document.getElementById('total').value < 360)
+	if(this.document.getElementById('total').value >= 0 && this.document.getElementById('total').value < 150)
 	{
 		this.document.getElementById('total_fdp').value = '17.50';
 		this.document.getElementById('total_fdp_aff').value = '17.50'+' €';
