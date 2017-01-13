@@ -1,4 +1,4 @@
-[![Version](https://img.shields.io/badge/version-1.0-green.svg)](https://img.shields.io/badge/version-1.1-green.svg) [![Build status](https://img.shields.io/badge/build-passing-green.svg)](https://img.shields.io/badge/build-passing-green.svg) [![CMS](https://img.shields.io/badge/CMS-WordPress-lightgrey.svg)](https://img.shields.io/badge/CMS-WordPress-lightgrey.svg) [![eCommerce](https://img.shields.io/badge/E%20Commerce%20solution-WooCommerce-lightgrey.svg)](https://img.shields.io/badge/E%20Commerce%20solution-WooCommerce-lightgrey.svg)
+[![Version](https://img.shields.io/badge/version-1.0-green.svg?style=flat-square)](https://img.shields.io/badge/version-1.1-greene.svg?style=flat-square) [![Build status](https://img.shields.io/badge/build-passing-green.svg?style=flat-square)](https://img.shields.io/badge/build-passing-green.svg?style=flat-square) [![CMS](https://img.shields.io/badge/CMS-WordPress-lightgrey.svg?style=flat-square)](https://img.shields.io/badge/CMS-WordPress-lightgrey.svg) [![eCommerce](https://img.shields.io/badge/E%20Commerce%20solution-WooCommerce-lightgrey.svg?style=flat-square)](https://img.shields.io/badge/E%20Commerce%20solution-WooCommerce-lightgrey.svg?style=flat-square)
 
 # Wine Grower
 
@@ -10,7 +10,7 @@
 
 ### Clone the project
 
-    git clone https://github.com/PierreChls/Wine-Grower.git
+    git clone https://github.com/pierreChls/wine-grower.git
     
 ### Add theme to your WordPress
 
