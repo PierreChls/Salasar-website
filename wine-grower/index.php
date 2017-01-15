@@ -132,41 +132,329 @@
         
          <div class="main-container">
          
-         <div id="map-canvas">
+         <?php 
+			
+				$APIkey = '';
+				$GoogleMapLat = '';
+				$GoogleMapLong = '';
+				$GoogleZoom = '';
+					
+				$args = array( 'post_type' => 'google-map', 'posts_per_page' => 1, 'orderby' => 'date', 'order' => 'ASC' );
+				$loop = new WP_Query( $args );
+				while ( $loop->have_posts() ) : $loop->the_post();
+				
+					$APIkey = do_shortcode( "[types field='api-key'][/types]" );
+					if( $APIkey != '' ) { ?>
+						
+						<?php $GoogleMapLat = do_shortcode( "[types field='latitude'][/types]" ); ?>
+						<?php $GoogleMapLong = do_shortcode( "[types field='longitude'][/types]" ); ?>
+						<?php $GoogleZoom = do_shortcode( "[types field='zoom'][/types]" ); ?>
+						
+					<?php }	?>
+				<?php 
+					
+				endwhile;
+			?>
+					
+				<?php wp_reset_query(); ?>
          
-         <script type="text/javascript" src="http://maps.google.com/maps/api/js?HERE-YOUR-API-KEY&sensor=true"></script>
-         <script src="<?php bloginfo('template_directory'); ?>/js/home-script.js"></script>
-		</div>
+         <div id="map-canvas"></div>
+         
+         <script>
+		      function initMap() {
+		        
+		        var positionLatLng = {
+			        lat: <?php if($GoogleMapLat != '') { echo $GoogleMapLat; } else { echo "48.8534100"; } ?>,
+			        lng: <?php if($GoogleMapLong != '') { echo $GoogleMapLong; } else { echo "2.3488000"; } ?>
+		        };
+		        
+		        var map = new google.maps.Map(document.getElementById('map-canvas'), {
+		          center: positionLatLng,
+		          scrollwheel: false,
+		          zoom: <?php if($GoogleMapZoom != '') { echo $GoogleMapZoom; } else { echo "12"; } ?>,
+		          styles: [
+					    {
+					        "featureType": "all",
+					        "elementType": "labels.text.fill",
+					        "stylers": [
+					            {
+					                "saturation": 36
+					            },
+					            {
+					                "color": "#ffffff"
+					            },
+					            {
+					                "lightness": 40
+					            }
+					        ]
+					    },
+					    {
+					        "featureType": "all",
+					        "elementType": "labels.text.stroke",
+					        "stylers": [
+					            {
+					                "visibility": "on"
+					            },
+					            {
+					                "color": "#000000"
+					            },
+					            {
+					                "lightness": 16
+					            }
+					        ]
+					    },
+					    {
+					        "featureType": "all",
+					        "elementType": "labels.icon",
+					        "stylers": [
+					            {
+					                "visibility": "off"
+					            }
+					        ]
+					    },
+					    {
+					        "featureType": "administrative",
+					        "elementType": "geometry.fill",
+					        "stylers": [
+					            {
+					                "color": "#000000"
+					            },
+					            {
+					                "lightness": 20
+					            },
+					            {
+					                "gamma": "1.00"
+					            }
+					        ]
+					    },
+					    {
+					        "featureType": "administrative",
+					        "elementType": "geometry.stroke",
+					        "stylers": [
+					            {
+					                "color": "#000000"
+					            },
+					            {
+					                "lightness": 17
+					            },
+					            {
+					                "weight": 1.2
+					            }
+					        ]
+					    },
+					    {
+					        "featureType": "landscape",
+					        "elementType": "geometry",
+					        "stylers": [
+					            {
+					                "color": "#000000"
+					            },
+					            {
+					                "lightness": 20
+					            },
+					            {
+					                "gamma": "0.00"
+					            }
+					        ]
+					    },
+					    {
+					        "featureType": "poi",
+					        "elementType": "geometry",
+					        "stylers": [
+					            {
+					                "color": "#000000"
+					            },
+					            {
+					                "lightness": 21
+					            },
+					            {
+					                "gamma": "0.00"
+					            }
+					        ]
+					    },
+					    {
+					        "featureType": "road.highway",
+					        "elementType": "geometry.fill",
+					        "stylers": [
+					            {
+					                "color": "#b7a56d"
+					            },
+					            {
+					                "lightness": 17
+					            },
+					            {
+					                "gamma": "0.00"
+					            }
+					        ]
+					    },
+					    {
+					        "featureType": "road.highway",
+					        "elementType": "geometry.stroke",
+					        "stylers": [
+					            {
+					                "color": "#b7a56d"
+					            },
+					            {
+					                "lightness": 29
+					            },
+					            {
+					                "weight": "0.01"
+					            },
+					            {
+					                "saturation": "0"
+					            },
+					            {
+					                "gamma": "0.00"
+					            }
+					        ]
+					    },
+					    {
+					        "featureType": "road.arterial",
+					        "elementType": "geometry",
+					        "stylers": [
+					            {
+					                "color": "#b7a56d"
+					            },
+					            {
+					                "lightness": 18
+					            }
+					        ]
+					    },
+					    {
+					        "featureType": "road.local",
+					        "elementType": "geometry",
+					        "stylers": [
+					            {
+					                "color": "#b7a56d"
+					            },
+					            {
+					                "lightness": 16
+					            }
+					        ]
+					    },
+					    {
+					        "featureType": "transit",
+					        "elementType": "geometry",
+					        "stylers": [
+					            {
+					                "color": "#000000"
+					            },
+					            {
+					                "lightness": 19
+					            }
+					        ]
+					    },
+					    {
+					        "featureType": "water",
+					        "elementType": "geometry",
+					        "stylers": [
+					            {
+					                "color": "#000000"
+					            },
+					            {
+					                "lightness": 17
+					            },
+					            {
+					                "gamma": "1.00"
+					            }
+					        ]
+					    }
+					]
+		        });
+		        
+		        var marker = new google.maps.Marker({
+				    position: positionLatLng,
+				    map: map
+				});
+		      }
+		
+		    </script>
+		    
+		    <?php if( $APIkey != '' ) { ?>
+		    	<script src="https://maps.googleapis.com/maps/api/js?key=<?php echo $APIkey; ?>&callback=initMap"
+		    async defer></script>
+		    
+		    <?php } else { ?>
+		    	<script src="https://maps.googleapis.com/maps/api/js?v=3.exp&sensor=false"></script>
+		    <?php } ?>
          
          
             <div class="main wrapper clearfix">
+            
+            	<style type="text/css">
+            	
+            		div#wpform-field-hp {
+						display: none;
+					}
+					
+					.contact-post {}
+					
+					.contact-post .wpforms-container input, .contact-post .wpforms-container textarea {
+						width: 100%;
+						max-width: 100%;
+					}
+					
+					.contact-post .wpforms-container .wpforms-field {
+						margin: 1rem auto 2em auto;
+					}
+					
+					.contact-post .wpforms-container .wpforms-field label.wpforms-field-label {
+						display: block;
+						margin-bottom: 0.5em;
+					}
+					
+					.contact-post .wpforms-container .wpforms-submit-container {
+						text-align: right;
+					}
+					
+					.contact-post .wpforms-container .wpforms-submit-container button {
+						margin: 1em auto;
+					    padding: 1em 2em;
+					    background: #b7a56d;
+					    border: 0;
+					    border-radius: 0.5em;
+					    color: #FFF;
+					    text-transform: uppercase;
+					    font-size: 1em;
+					    outline: none;
+					}
+					
+				</style>
+				
                 <article id="contact">
-                    <section class="col1 margr">
-                    	<h2>Formulaire de contact</h2>
-                    	<form id="formSendMail">
-                        	   
-                        	   <fieldset>
-                                  <p><input type="text" name="nom_c" id="nom_c" placeholder="Votre nom *"></p>
-                                  <p><input type="text" name="email_c" id="email_c" placeholder="Votre email *"></p>
-                                  <p><textarea name="message_c" id="message_c" placeholder="Votre message *"></textarea></p>
-                                  <p><small>* Champs obligatoires</small></p>
-                                  
-                                  <p style="text-align: left;font-weight: 800;" id="alertformSendMail"></p>
-                                  
-                              <input type="submit" id="submitformSendMail"value="Envoyer" class="bouton"> 
-                            </fieldset>
-                        </form>
-                    </section>
-                    <section class="col2" style="float:right;">
-                    	<h2 style="text-align:right;">Coordonnées</h2>
-                        <p style="text-align:right;">Wine Grower<br/>
-                        00 Rue du Wine Grower<br/>
-                        00 000 Ville<br/>
-                        FRANCE<br/>
-                        Mail : <a href="mailto:<?php bloginfo( 'admin_email' ); ?>" style="color:#38393a"><?php bloginfo( 'admin_email' ); ?></a><br/>
-                        Tél : <a href="tel:+33000000000" style="color:#38393a">00 00 00 00 00</a>
-                        <br clear="all"/></p>
-                    </section>
+               
+                    	<?php 
+					
+							$args = array( 'post_type' => 'contact', 'posts_per_page' => 1, 'orderby' => 'date', 'order' => 'ASC' );
+							$loop = new WP_Query( $args );
+							while ( $loop->have_posts() ) : $loop->the_post(); ?>
+							
+								<section class="col1 margr contact-post">
+									<h2>Formulaire de contact</h2>
+									<?php the_content(); ?>
+								</section>
+								
+								<section class="col2" style="float:right;">
+									<h2 style="text-align:right;">Coordonnées</h2>
+									
+									<?php $contactAdresse = do_shortcode( "[types field='adresse'][/types]" ); ?>
+									<?php if($contactAdresse != '') { ?>
+										<div style="text-align:right;"><?php echo $contactAdresse; ?></div>
+									<?php } ?>
+									
+									<?php $contactMail= do_shortcode( "[types field='adresse-e-mail'][/types]" ); ?>
+									<?php if($contactMail != '') { ?>
+										<p style="text-align:right;">Mail : <a href="mailto:<?php echo $contactMail; ?>" style="color:#38393a"><?php echo $contactMail; ?></a></p>
+									<?php } ?>
+									
+									<?php $contactTel= do_shortcode( "[types field='telephone'][/types]" ); ?>
+									<?php if($contactTel != '') { ?>
+										<p style="text-align:right;">Tel : <a href="tel:<?php echo $contactTel; ?>" style="color:#38393a"><?php echo $contactTel; ?></a></p>
+									<?php } ?>
+								</section>
+							
+							<?php endwhile; ?>
+							<?php wp_reset_query(); ?>
                 </article>
             </div> 
         </div> 
