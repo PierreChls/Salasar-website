@@ -41,7 +41,18 @@
 				        ?>
 			        
 			        	<div class="slide">
-                          <?php the_content(); ?>
+                          	<div class="slide_description">
+                          		<?php if ( has_post_thumbnail() ) { ?>
+                          		 <img src="<?php echo the_post_thumbnail_url(); ?>" class="photo_cuv" style="max-width: 130px; height: auto;" />
+						  		 <?php } ?>
+							</div>
+							<div class="text_scena_description">
+							    <h2><?php the_title(); ?></h2>
+							    <div class="slide_description">
+							        <?php echo apply_filters( 'woocommerce_short_description', $product->post->post_excerpt ) ?>
+							        <a href="<?php echo get_permalink(); ?>">Découvrir</a>
+							    </div>
+							</div>
 						</div>
 						
 						<?php endwhile; ?>

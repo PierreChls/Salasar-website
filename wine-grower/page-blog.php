@@ -177,7 +177,7 @@ get_header(); ?>
 							<style>
 								#primary{height: 1000px;}
 							</style>
-							<h2 style="text-align: center;margin-top: 100px;">Désolé, le site Cailhol Gautran n'a pas encore publié d'article.</h2>
+							<h2 style="text-align: center;margin-top: 100px;">Désolé, le site <? echo get_bloginfo( 'name' ) ?> n'a pas encore publié d'article.</h2>
 						    <?php endif; ?>   
 						             
                     </div><!--FIN allNews-->

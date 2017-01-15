@@ -35,10 +35,19 @@ if ( ! defined( 'ABSPATH' ) ) {
     left: 10%;
 }
 
+/*
 .text_scena_description h2, .text_scena_description p{
-	/*color: #6e5145;*/
 	color: #fff;
 } 
+*/
+
+.text_scena_description.white, .text_scena_description.white h2, .text_scena_description.white a {
+	color: #fff;
+}
+
+.text_scena_description.black, .text_scena_description.black h2, .text_scena_description.black a {
+	color: #000;
+}
 
 .text_scena_description h2.black, .text_scena_description p.black{
 	color: #000;
@@ -121,8 +130,29 @@ get_header( 'shop' ); ?>
 	?>
 
 		<?php while ( have_posts() ) : the_post(); ?>
-
-			<?php wc_get_template_part( 'content', 'single-product' ); ?>
+			
+			<?php $dispoText = do_shortcode( "[types field='disposition-du-texte'][/types]" ); ?>
+			<?php $colorText = do_shortcode( "[types field='couleur-du-texte'][/types]" ); ?>
+		
+			<div class="slide_scena">
+				<?php $scenaHorizontal = do_shortcode( "[types field='scenarisation-horizontal'][/types]" ); if( $scenaHorizontal != '' ) { ?>
+						<?php echo $scenaHorizontal; ?>
+				<?php }	?>
+			    <?php $scenaVertical = do_shortcode( "[types field='scenarisation-vertical'][/types]" ); if( $scenaVertical != '' ) { ?>
+						<?php echo $scenaVertical; ?>
+				<?php }	?>
+			</div>
+			
+			<div class="text_scena_description <?php if( $dispoText != '' ) { echo $dispoText; } ?> <?php if( $colorText != '' ) { echo $colorText; } ?>">
+			    <h2><?php the_title(); ?></h2>
+			    <div class="slide_scena">
+			        <?php the_content(); ?>
+			        <?php $fichetechnique = do_shortcode( "[types field='fiche-technique'][/types]" ); if( $fichetechnique != '' ) { ?>
+						<a id="fiche_technique" class="<?php if( $colorText != '' ) { echo $colorText; } ?>" href="<?php echo $fichetechnique; ?>" target="_blank">Fiche technique</a>
+					<?php }	?>
+			        <a href="<?php echo get_site_url(); ?>//#tarifs">Commander</a>
+			    </div>
+			</div>
 
 		<?php endwhile; // end of the loop. ?>
 
