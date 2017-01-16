@@ -6,10 +6,45 @@
 
  include (TEMPLATEPATH . '/to-cart.php');
  include (TEMPLATEPATH . '/mail-wine-grower.php');
+ include (TEMPLATEPATH . '/is-mobile.php');
  
  get_header(); ?>
-
- 	<div class="main-container nobg container-video" id="presentation"></div>
+ 
+ 	
+ 	<?php if( !check_user_agent('mobile') ) { ?>
+ 	
+ 		
+ 		<?php
+			$args = array(
+				'post_type' => 'video',
+				'numberposts' 		 => 1,
+				'posts_per_page' 	 => 1,
+				'order'    			 => 'ASC'
+			);
+			query_posts( $args );
+			$loop = new WP_Query( $args );
+			while ( $loop->have_posts() ) : $loop->the_post();
+			
+				$videoMP4 = do_shortcode( "[types field='video-format-mp4'][/types]" );
+				$videoWEBM = do_shortcode( "[types field='video-format-webm'][/types]" );
+				$videoOGV = do_shortcode( "[types field='video-format-ogv'][/types]" );
+				
+				if($videoMP4 != '' && $videoWEBM != '' && $videoOGV != '') { ?>
+				
+					<div class="main-container nobg container-video" id="presentation">
+						<video controls preload='auto' autoplay='true' loop>
+							<source src="<?php bloginfo('template_directory'); ?>/videos/<?php echo $videoMP4; ?>" type="video/mp4" />
+							<source src="<?php bloginfo('template_directory'); ?>/videos/<?php echo $videoWEBM; ?>" type="video/webm" />
+							<source src="<?php bloginfo('template_directory'); ?>/videos/<?php echo $videoOGV; ?>" type="video/ogg" />
+						</video>
+					</div> <?php
+				
+				}	
+				
+			endwhile;
+			wp_reset_postdata(); 
+		?>
+ 	<?php } ?>
  	
  			<?php
 		     		$args = array(
