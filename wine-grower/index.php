@@ -10,24 +10,23 @@
  get_header(); ?>
 
  	<div class="main-container nobg container-video" id="presentation"></div>
-        
-        <div id="code_promo" class="main-container" style="background-color: rgba(247,247,247,0.8)">
-        	 <?php
+ 	
+ 			<?php
 		     		$args = array(
-						'category_name' 	 => 'code-promo',
+						'post_type' => 'code-promo',
 						'numberposts' 		 => 1,
 						'posts_per_page' 	 => 1,
 						'order'    			 => 'ASC'
 					);
 					query_posts( $args );
-					$the_query = new WP_Query( $args );
-						while ( $the_query->have_posts() ) :
-							$the_query->the_post();
-							the_content();
-						endwhile;
+					$loop = new WP_Query( $args );
+					while ( $loop->have_posts() ) : $loop->the_post();
+						if ( has_post_thumbnail() ) { ?>
+							<div id="code_promo" class="main-container" style="background-color: rgba(247,247,247,0.8)"><img src="<?php the_post_thumbnail_url(); ?>"/></div> <?php
+						}
+					endwhile;
 					wp_reset_postdata(); 
 			?>
-        </div> 
         
          <div class="main-container" style="background-color: rgba(247,247,247,0.8)">
             <article id="cuvees">
