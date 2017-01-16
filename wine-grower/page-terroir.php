@@ -74,14 +74,17 @@ get_header(); ?>
 		<main id="main" class="site-main" role="main">
 
 			<?php while ( have_posts() ) : the_post(); ?>
+			
+				<?php if ( has_post_thumbnail() ) { ?>
+					<div id="background_section_image">
+						<img src="<?php the_post_thumbnail_url(); ?>"/>
+					</div>
+				<?php } ?>
 				
-				<?php get_template_part( 'content', 'page' ); ?>
-
-				<?php
-				/**
-				 * @hooked winegrower_display_comments - 10
-				 */
-				?>
+				<div id="text">
+					<h1 style="text-align: center;"><?php the_title() ?></h1>
+					<?php the_content() ?>	
+				</div>
 
 			<?php endwhile; // end of the loop. ?>
 
