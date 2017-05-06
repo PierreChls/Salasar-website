@@ -42,8 +42,10 @@ header.entry-header{
 
 form.checkout.woocommerce-checkout{
 	padding: 1em;
+	text-align: center;
 }
 
+/*
 form.checkout.woocommerce-checkout .col2-set .col-1, form.checkout.woocommerce-checkout .col2-set .col-2{
 	width: 49%;
     display: inline-block;
@@ -66,6 +68,7 @@ form.checkout.woocommerce-checkout .col2-set .col-1, form.checkout.woocommerce-c
 	    padding-left: 0 !important;
 	}
 }
+*/
 
 form.checkout.woocommerce-checkout .col2-set .col-2{
 	margin: auto;
@@ -80,6 +83,7 @@ p.form-row label {
 form.checkout.woocommerce-checkout h3{
 	padding: 1em;
 	font-size: 1.4em;
+	text-align: center;
 }
 
 form.checkout.woocommerce-checkout p {
@@ -88,10 +92,17 @@ form.checkout.woocommerce-checkout p {
 
 form.checkout.woocommerce-checkout input{
 	display: block;
+	margin: 0 auto;
+}
+
+form.checkout.woocommerce-checkout select {
+	display: block;
+	margin: 0 auto;
 }
 
 form.checkout.woocommerce-checkout textarea{
 	display: block;
+	margin: 0 auto;
 }
 
 form.checkout.woocommerce-checkout abbr.required{
