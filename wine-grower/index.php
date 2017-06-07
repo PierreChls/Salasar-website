@@ -161,6 +161,10 @@
                         Mail : <a href="mailto:gautran@orange.fr" style="color:#38393a">gautran@orange.fr</a><br/>
                         Tél : <a href="tel:+33468912603 " style="color:#38393a">04 68 91 26 03 </a>
                         <br clear="all"/></p>
+                        
+                        <h2 style="text-align:right; margin:2em auto;">Suivez-nous !</h2>
+                        <p style="text-align:right;"><img src="<?php bloginfo('template_directory'); ?>/images/icons/facebook.png" style="width: 1em; height: auto; display: inline-block; margin: 0 0.5em 0 auto; vertical-align: middle;" /><a style="color: #38393a;font-weight: 600; font-style: inherit;" href="https://fr-fr.facebook.com/domaine.cailholgautran" target="_blank">Facebook</a><br/></p>
+                        
                     </section>
                 </article>
             </div> 
